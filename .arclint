@@ -1,0 +1,28 @@
+{
+  "exclude": [
+    "(^_site/)"
+  ],
+  "linters": {
+    "filename": {
+      "type": "filename"
+    },
+    "json": {
+      "type": "json",
+      "include": [
+        "(^\\.arcconfig$)",
+        "(^\\.arclint$)",
+        "(\\.json$)"
+      ]
+    },
+    "merge-issues": {
+      "type": "merge-conflict"
+    },
+    "spelling": {
+      "type": "spelling"
+    },
+    "text": {
+      "type": "text",
+      "text.max-line-length": 160
+    }
+  }
+}
