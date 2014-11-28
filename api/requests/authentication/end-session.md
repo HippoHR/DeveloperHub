@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+[Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo; /authentication/end-session
+
+# /authentication/end-session
+
+Stop een actieve sessie.
+
+## Request
+
+|**URL**          |http://www.uitzendbureau.nl/api/authentication/end-session
+|**HTTP-methode** |POST
+
+## Parameters
+
+|**Parameter** |**Type** |**Optioneel** |**Beschrijving**
+|**sessionId** |String   |Nee           |De session identifier (hoofdlettergevoelig), die is verkregen bij het aanvragen van een challenge.
+
+## Response
+
+De response wordt aangeboden in JSON-formaat.
+
+## Velden
+
+|**Veld**         |**Type** |**Optioneel** |**Beschrijving**
+|**sessionEnded** |Bool     |Nee           |Retourneert `true` indien de sessie succesvol is gestopt.
+
+## Foutcodes
+
+Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze request kunnen de volgende foutcodes optreden:
+
+|**400** |Controleer de meegestuurde parameters. Ben je `sessionId` vergeten, of is deze leeg?
+|**401** |Je bent niet geauthenticeerd. Mogelijk is de sessie verlopen.
+|**500** |Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of techniek@uitzendbureau.nl.
+
+## Voorbeeldresponse
+
+    {
+        "sessionEnded": true
+    }
