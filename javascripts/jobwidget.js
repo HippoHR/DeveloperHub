@@ -33,10 +33,13 @@
   JobWidgetForm.prototype.fillTheForm = function() {
     document.getElementById('s').value = this.search;
     document.getElementById('p').value = this.place;
-    document.getElementById('rad').value = this.radius;
     document.getElementById('r').value = this.recruiter;
     document.getElementById('l').value = this.nrOfJobs;
     document.getElementById('w').value = this.width;
+
+    // Update radius selector
+    var radiusValue = this.radius ? this.radius + 'km' : 'Alles';
+    jQuery('.radius-selector .btn .distance').text(radiusValue);
   };
 
   /**

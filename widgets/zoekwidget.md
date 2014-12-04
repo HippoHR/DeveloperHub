@@ -12,29 +12,33 @@ Wil je liever een lijst met vacatures, op basis van een vaste zoekopdracht aanbi
 
 ## Stap 1. Kies jouw zoekformulier
 
-<form>
-  <p>
-    <label>Type formulier</label>
+<form class="form-horizontal">
 
-    <label>
-      <input type="radio" name="orientation" value="horizontal" />
-      Horizontaal
-    </label>
+  <div class="form-group">
+    <label for="orientation" class="control-label col-sm-3">Type formulier</label>
+    <div class="col-sm-9">
+      <label class="radio-inline">
+        <input type="radio" name="orientation" value="horizontal" />
+        Horizontaal
+      </label>
 
-    <label>
-      <input type="radio" name="orientation" value="vertical" />
-      Verticaal
-    </label>
-  </p>
+      <label class="radio-inline">
+        <input type="radio" name="orientation" value="vertical" />
+        Verticaal
+      </label>
+    </div>
+  </div>
 
-  <p>
-    <input type="submit" value="Maak widget!" />
-  </p>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <input type="submit" value="Maak widget!" class="btn btn-primary" />
+    </div>
+  </div>
 </form>
 
-<div id="code" class="hidden">
+<div id="code" class="hidden form-group">
   <h2>Stap 2. Kopieer deze code naar de HTML van je website</h2>
-  <textarea id="code-body" onclick="this.focus();this.select();" style="width:100%;"></textarea>
+  <textarea id="code-body" onclick="this.focus();this.select();" class="form-control"></textarea>
 </div>
 
 <div id="example" class="hidden">
