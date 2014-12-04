@@ -7,7 +7,7 @@ layout: default
 # Integratiepartners
 
 Als je al gebruik maakt van &eacute;&eacute;n of meer van de volgende softwaresystemen, dan hoeft er geen koppeling meer te worden gemaakt. Mail naar
-support@uitzendbureau.nl of bel ons op 0478-640204 voor meer informatie.
+[support@uitzendbureau.nl](mailto:support@uitzendbureau.nl?subject=DeveloperHub%3A%20Integratiepartners) of bel ons op 0478-640204 voor meer informatie.
 
 * InGoedeBanen
 * Knollenstein

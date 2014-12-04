@@ -99,7 +99,7 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
             </td>
             <td>
                 Deze aanvraag is voor jou helaas niet toegankelijk. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of
-                techniek@uitzendbureau.nl.
+                <a href="mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fapplications%3A%20status%20403">techniek@uitzendbureau.nl</a>.
             </td>
         </tr>
         <tr>
@@ -115,7 +115,8 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                 <strong>500</strong>
             </td>
             <td>
-                Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of techniek@uitzendbureau.nl.
+                Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of
+                <a href="mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fapplications%3A%20status%20500">techniek@uitzendbureau.nl</a>.
             </td>
         </tr>
     </tbody>

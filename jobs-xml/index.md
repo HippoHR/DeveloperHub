@@ -2,8 +2,6 @@
 layout: default
 ---
 
-TODO: LINKS
-
 [Developer Hub](/) &raquo; Vacatures plaatsen via XML
 
 # Vacatures plaatsen op Uitzendbureau.nl via XML
@@ -25,10 +23,11 @@ vacatures op Uitzendbureau.nl worden bijgewerkt.
 Je zult wat tijd moeten investeren van je developer om de koppeling in te richten. Doorgaans is daar zo&#39;n 2 tot 4 uur voor nodig, maar dit verschilt per
 situatie. Je kunt het beste even navraag doen bij het bedrijf of de persoon die de XML-feed zal gaan maken.
 
-Wil je ervoor zorgen dat dit XML-bestand niet voor iedereen toegankelijk is? Vraag je developer dan om [deze authenticatie](/jobs-xml/auth.html) te
+Wil je ervoor zorgen dat dit XML-bestand niet voor iedereen toegankelijk is? Vraag je developer dan om [deze authorisatie](/jobs-xml/doc/auth.html) te
 implementeren.
 
-De developer zal de XML-feed bouwen op basis van onze [documentatie](/jobs-xml/doc.html). De developer kan daar ook [controleren](/) of de XML voldoet aan onze
-eisen. Als dat het geval is, kan de developer de nieuwe XML-feed bij ons [aanmelden](/). Wij zorgen er dan voor dat deze in gebruik wordt genomen.
+De developer zal de XML-feed bouwen op basis van onze [documentatie](/jobs-xml/doc). De developer kan daar ook [controleren](/jobs-xml/doc/validation.html) of
+de XML voldoet aan onze eisen. Als dat het geval is, kan de developer de nieuwe XML-feed bij ons [aanmelden](/jobs-xml/doc/sign-up.html). Wij zorgen er dan
+voor dat deze in gebruik wordt genomen.
 
-[Aan de slag!](/jobs-xml/doc.html)
+[Aan de slag!](/jobs-xml/doc)

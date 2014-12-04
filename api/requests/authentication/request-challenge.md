@@ -34,7 +34,7 @@ De response wordt aangeboden in JSON-formaat.
 
 Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze request kunnen de volgende foutcodes optreden:
 
-|**500** |Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of techniek@uitzendbureau.nl.
+|**500** |Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of [techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fauthentication%2Frequest-challenge%3A%20status%20500).
 
 ## Voorbeeldresponse
 

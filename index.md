@@ -10,9 +10,9 @@ Als er nog geen [bestaande koppeling](/jobs-xml/integration-partners.html) is, k
 
 * Bespaar invoerwerk. Voer je vacatures alleen in je eigen systeem in.
 * Je vacatures zijn altijd actueel.
-* [Uitgebreide documentatie](/jobs-xml/doc.html) beschikbaar.
+* [Uitgebreide documentatie](/jobs-xml/doc) beschikbaar.
 
-[Meer informatie](/jobs-xml) &middot; [Bekijk de XML-documentatie](/jobs-xml/doc.html)
+[Meer informatie](/jobs-xml) &middot; [Bekijk de XML-documentatie](/jobs-xml/doc)
 
 ## API-beschrijving
 
