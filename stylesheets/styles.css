@@ -187,6 +187,10 @@ footer {
   display:none;
 }
 
+.loader--small {
+  height: .9em;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {

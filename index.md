@@ -24,6 +24,11 @@ Als er nog geen [bestaande koppeling](/jobs-xml/integration-partners.html) is, k
 
 ## Widgets voor op je site
 
+### De vacaturemodule
+
+De vacaturemodule toont jouw vacatures professioneel op je eigen website. Kandidaten kunnen hierdoor gemakkelijk op jouw website solliciteren.
+[Lees meer over de vacaturemodule &raquo;](/vacaturemodule.html)
+
 ### De vacaturewidget
 
 Met de vacaturewidget kun je gratis vacatures toevoegen aan je eigen website. Deze vacatures zijn altijd actueel, zonder dat jij hier iets voor hoeft te doen.
