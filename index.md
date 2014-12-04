@@ -22,12 +22,13 @@ Als er nog geen [bestaande koppeling](/jobs-xml/integration-partners.html) is, k
 
 [Meer informatie](/api) &middot; [Bekijk de API-documentatie](/api/doc.html)
 
-## Widgets voor op je site
-
-### De vacaturemodule
+## De vacaturemodule
 
 De vacaturemodule toont jouw vacatures professioneel op je eigen website. Kandidaten kunnen hierdoor gemakkelijk op jouw website solliciteren.
+
 [Lees meer over de vacaturemodule &raquo;](/vacaturemodule.html)
+
+## Widgets voor op je site
 
 ### De vacaturewidget
 
