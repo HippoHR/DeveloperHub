@@ -1,0 +1,20 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+<ul>
+{% for item in include.nav %}
+    <li {% if item.url == navurl %}class="active"{% endif %}>
+        {% unless item.link == false %}
+            <a href="{{ item.url }}">
+                {{ item.text }}
+            </a>
+        {% else %}
+            <span>
+                {{ item.text }}
+            </span>
+        {% endunless %}
+
+        {% if item.subitems and navurl contains item.url or item.link == false %}
+            {% include nav.html nav=item.subitems %}
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>

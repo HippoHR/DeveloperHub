@@ -1,0 +1,59 @@
+- text: Home
+  url: /
+- text: Vacatures plaatsen via XML
+  url: /jobs-xml/
+  subitems:
+    - text: Documentatie
+      link: false
+      subitems:
+        - text: 1. Algemene informatie
+          url: /jobs-xml/doc/
+        - text: 2. Uitleg XML-schema
+          url: /jobs-xml/doc/xml-schema.html
+        - text: 3. Validatietool
+          url: /jobs-xml/doc/validation.html
+        - text: 4. Aanmelden nieuwe XML-feed
+          url: /jobs-xml/doc/sign-up.html
+        - text: Authorisatie
+          url: /jobs-xml/doc/auth.html
+        - text: Voorbeelden en hulpmiddelen
+          url: /jobs-xml/doc/examples.html
+    - text: Integratiepartners
+      url: /jobs-xml/integration-partners.html
+- text: API-beschrijving
+  url: /api/
+  subitems:
+    - text: Documentatie
+      url: /api/doc.html
+    - text: Authenticatie
+      url: /api/auth.html
+    - text: Requests
+      url: /api/requests/
+      subitems:
+        - text: Authenticatie
+          link: false
+          subitems:
+            - text: /authentication/request-challenge
+              url: /api/requests/authentication/request-challenge.html
+            - text: /authentication/authenticate
+              url: /api/requests/authentication/authenticate.html
+            - text: /authentication/end-session
+              url: /api/requests/authentication/end-session.html
+        - text: Sollicitaties
+          link: false
+          subitems:
+            - text: /applications
+              url: /api/requests/applications/
+            - text: /application/cv
+              url: /api/requests/applications/cv.html
+            - text: /application/cv/extracted
+              url: /api/requests/applications/cv-extracted.html
+- text: De vacaturemodule
+  url: /vacaturemodule.html
+- text: Widgets
+  url: /widgets/
+  subitems:
+    - text: De vacaturewidget
+      url: /widgets/vacaturewidget.html
+    - text: De zoekwidget
+      url: /widgets/zoekwidget.html

@@ -16,28 +16,16 @@
     <div class="wrapper">
       <header>
         <h1>Uitzendbureau.nl Developer Hub</h1>
-        <p>All the comprehensive guides and documentation to help you start working with Uitzendbureau.nl as quickly as possible</p>
+        <p>Alles wat jij als developer nodig hebt om met Uitzendbureau.nl aan de slag te gaan!</p>
 
-        <p class="view">
-          <a href="https://github.com/TeamYellowYellow/voor-developers">
-            View the Project on GitHub <small>TeamYellowYellow/voor-developers</small>
-          </a>
-        </p>
+        <nav>
+          {% include nav.html nav=site.data.menu %}
+        </nav>
 
-
-        <ul>
-          <li><a href="https://github.com/TeamYellowYellow/voor-developers/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/TeamYellowYellow/voor-developers/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/TeamYellowYellow/voor-developers">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
       <section>
         {{ content }}
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/TeamYellowYellow">TeamYellowYellow</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
 
     <script src="/javascripts/scale.fix.js"></script>
