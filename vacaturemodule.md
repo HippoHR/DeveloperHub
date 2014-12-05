@@ -22,25 +22,29 @@ Bel 0478-640204 voor meer informatie over de vacaturemodule.
 
 ## Stap 1. Kies uitzendbureau
 
-<form>
+<form class="form-horizontal">
 
-  <p>
-    <span id="recruiter-list-loader">
-      <img src="/images/loading.gif" alt="Even geduld." class="loader--small" />
-      Lijst van uitzendbureaus wordt geladen
-    </span>
-  </p>
+  <div class="form-group">
+    <div class="col-sm-6">
+      <p class="form-control-static" id="recruiter-list-loader">
+        <img src="/images/loading.gif" alt="Even geduld." class="loader--small" />
+        Lijst van uitzendbureaus wordt geladen
+      </p>
+    </div>
 
-  <p>
-    <input type="submit" value="Toon de module!" />
-  </p>
+    <div class="col-sm-6">
+      <input type="submit" class="btn btn-primary" value="Toon de module!" />
+    </div>
+  </div>
 
 </form>
 
 <div id="code" class="hidden">
   <h2>Stap 2. Kopieer deze code naar de HTML van je website</h2>
 
-  <textarea id="code-body" onclick="this.focus();this.select();" style="width:100%;" rows="15"></textarea>
+  <p>
+    <textarea id="code-body" class="form-control" onclick="this.focus();this.select();" rows="15"></textarea>
+  </p>
 </div>
 
 <div id="example" class="hidden">

@@ -35,6 +35,7 @@
     var select = document.createElement('select');
     select.name = 'r';
     select.id = 'r';
+    select.className = 'form-control';
     // Now create options for all recruiters
     for(var i = 0; i < recruiters.length; i++) {
       var option = document.createElement('option');
