@@ -57,7 +57,10 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
   <div class="form-group">
     <label for="r" class="control-label col-sm-3">Uitzendbureau</label>
     <div class="col-sm-6">
-      <input type="text" name="r" id="r" class="form-control" />
+      <p class="form-control-static" id="recruiter-list-loader">
+        <img src="/images/loading.gif" alt="Even geduld." class="loader--small" />
+        Lijst van uitzendbureaus wordt geladen
+      </p>
     </div>
     <div class="col-sm-3">
       <p class="form-control-static">
@@ -117,4 +120,6 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
 <script src="/javascripts/bootstrap/dropdown.min.js"></script>
 <script src="/javascripts/URI.js"></script>
 <script src="/javascripts/OutputBuffer.js"></script>
+<script src="/javascripts/uitzendbureau-nl-api.js"></script>
+<script src="/javascripts/recruiter.js"></script>
 <script src="/javascripts/jobwidget.js"></script>

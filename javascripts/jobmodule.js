@@ -1,4 +1,4 @@
-(function(URI, UitzendbureauNLAPI) {
+(function(URI, Recruiter) {
   'use strict';
 
   /**
@@ -7,12 +7,6 @@
    */
   function JobModuleForm() {
     this.recruiter = '';
-
-    /**
-     * @var {Storage} Cache Caching mechanism that implements the Storage interface (http://www.w3.org/TR/webstorage/#storage). Currently uses sessionStorage
-     *                      to make sure the recruiter data will expire and thus will be updated on the next session
-     */
-    this.Cache = window.sessionStorage;
   };
 
   /**
@@ -26,18 +20,10 @@
    * Prepare the recruiter part of the form. Loads a list of recruiters to show them
    */
   JobModuleForm.prototype.prepareRecruiters = function() {
-    var uitzendbureau = new UitzendbureauNLAPI();
-    var recruiters = this.Cache.getItem('recruiters');
-
-    if(recruiters) {
-      this.showRecruiterList(JSON.parse(recruiters));
-    } else {
-      var self = this;
-      uitzendbureau.getRecruiters(function(recruiters) {
-        self.Cache.setItem('recruiters', JSON.stringify(recruiters));
-        self.showRecruiterList(recruiters);
-      });
-    }
+    var self = this;
+    Recruiter.getAll(function(recruiters) {
+      self.showRecruiterList(recruiters);
+    });
   };
 
   /**
@@ -165,4 +151,4 @@
     form.showTheCode();
     form.showTheExample();
   }
-})(URI, UitzendbureauNLAPI);
+})(URI, Recruiter);

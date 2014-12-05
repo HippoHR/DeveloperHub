@@ -1,4 +1,4 @@
-(function(URI, OutputBuffer) {
+(function(URI, OutputBuffer, Recruiter) {
   'use strict';
 
   /**
@@ -12,6 +12,53 @@
     this.recruiter = '';
     this.nrOfJobs = '';
     this.width = '';
+  };
+
+  /**
+   * Prepare the form
+   */
+  JobWidgetForm.prototype.prepare = function() {
+    this.prepareRecruiters();
+  };
+
+  /**
+   * Prepare the recruiter part of the form. Loads a list of recruiters to show them
+   */
+  JobWidgetForm.prototype.prepareRecruiters = function() {
+    var self = this;
+    Recruiter.getAll(function(recruiters) {
+      self.showRecruiterList(recruiters);
+    });
+  };
+
+  /**
+   * Show the list of recruiters that users can choose for the form
+   * @param {Array} recruiters List of objects describing recruiters in the form of {name:'',nameUrl:''}
+   */
+  JobWidgetForm.prototype.showRecruiterList = function(recruiters) {
+    // Create the select box to show the recruiters in
+    var select = document.createElement('select');
+    select.name = 'r';
+    select.id = 'r';
+    select.className = 'form-control';
+    // Now create options for all recruiters
+    for(var i = 0; i < recruiters.length; i++) {
+      var option = document.createElement('option');
+      option.value = recruiters[i].nameUrl;
+      option.appendChild(document.createTextNode(recruiters[i].name));
+
+      // Make sure the selected recruiter will be shown as selected in the form
+      if(this.recruiter && recruiters[i].nameUrl === this.recruiter) {
+        option.selected = true;
+      }
+
+      // Add the option to the select box
+      select.appendChild(option);
+    }
+
+    // Find the destination for our new select box. Replace the destination with this select box
+    var destination = document.getElementById('recruiter-list-loader');
+    destination.parentNode.replaceChild(select, destination);
   };
 
   /**
@@ -99,13 +146,15 @@
     }
   }
 
+  var form = new JobWidgetForm();
+  form.prepare();
+
   // Check if the form has been submitted
   if(URI.hasQuery()) {
     // Handle the submitted form
-    var form = new JobWidgetForm();
     form.loadFromUrl();
     form.fillTheForm();
     form.showTheCode();
     form.showTheExample();
   }
-})(URI, OutputBuffer);
+})(URI, OutputBuffer, Recruiter);
