@@ -35,7 +35,7 @@ je verwacht.
 
 Deze informatie kan van pas komen als je de gebruikersnaam en het wachtwoord bijvoorbeeld in een `.htpasswd`-bestand van Apache zet.
 
-Bij `Basic` authorisatie wordt een username en een wachtwoord meegestuurd. Deze worden, gescheiden door een dubbele punt, ge&euml;ncode naar `base64`.
+Bij `Basic` authorisatie wordt een username en een wachtwoord meegestuurd. Deze worden, gescheiden door een dubbele punt, ge&euml;ncodeerd naar `base64`.
 Bijvoorbeeld, als de username `Aladdin` is, en het wachtwoord `open seseme`, dan krijg je de volgende HTTP header:
 
     Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==

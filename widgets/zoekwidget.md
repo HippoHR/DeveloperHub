@@ -47,6 +47,6 @@ Wil je liever een lijst met vacatures, op basis van een vaste zoekopdracht aanbi
   <div id="example-body"></div>
 </div>
 
-<script src="/javascripts/URI.js"></script>
-<script src="/javascripts/OutputBuffer.js"></script>
-<script src="/javascripts/searchwidget.js"></script>
+<script src="/javascripts/external/uri.js"></script>
+<script src="/javascripts/layout/output-buffer.js"></script>
+<script src="/javascripts/widgets/search.js"></script>

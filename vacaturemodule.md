@@ -53,7 +53,7 @@ Bel 0478-640204 voor meer informatie over de vacaturemodule.
   <div id="example-body"></div>
 </div>
 
-<script src="/javascripts/URI.js"></script>
-<script src="/javascripts/uitzendbureau-nl-api.js"></script>
-<script src="/javascripts/recruiter.js"></script>
-<script src="/javascripts/jobmodule.js"></script>
+<script src="/javascripts/external/uri.js"></script>
+<script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
+<script src="/javascripts/widgets/recruiter.js"></script>
+<script src="/javascripts/widgets/job-module.js"></script>

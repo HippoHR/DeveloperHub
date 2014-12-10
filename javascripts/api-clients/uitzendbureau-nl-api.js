@@ -10,10 +10,42 @@
 
   /**
    * Method to retrieve recruiters from the API
-   * @param {Function} done Callback for when the request is finished. Receives the recruiters as first argument
+   * @param {Function} done Callback for when the request is finished. Receives the recruiters as first parameter
    */
   UitzendbureauNLAPI.prototype.getRecruiters = function(done) {
     this.connector.get('/recruiters', done);
+  };
+
+  /**
+   * Validates the jobs xml through the api
+   * @param {string} url The url that contains the XML-feed to validate
+   * @param {string} auth The optional authorization header that should be used to access the XML-feed
+   * @param {function} done Callback for when the request is finished. Receives the validation result as first parameter, second parameter is the status code
+   */
+  UitzendbureauNLAPI.prototype.validateJobsXML = function(url, auth, done) {
+    this.connector.post('/xml/validate/jobs', {
+      url: url,
+      auth: auth
+    }, done);
+  };
+
+  /**
+   * Validates the jobs xml through the api
+   * @param {string} recruiterName The name of the recruiter
+   * @param {string} email The contact email address
+   * @param {string} phone The contact phone number
+   * @param {string} url The url that contains the XML-feed to validate
+   * @param {string} auth The optional authorization header that should be used to access the XML-feed
+   * @param {function} done Callback for when the request is finished. Receives the validation result as first parameter, second parameter is the status code
+   */
+  UitzendbureauNLAPI.prototype.signUpJobsXML = function(recruiterName, email, phone, url, auth, done) {
+    this.connector.post('/xml/signup/jobs', {
+      recruiterName: recruiterName,
+      email: email,
+      phone: phone,
+      url: url,
+      auth: auth
+    }, done);
   };
 
   /**
@@ -25,7 +57,7 @@
     this.authKey = authKey;
     this.sessionId;
     this.sessionExpireDate;
-    this.rootUrl = 'http://www.uitzendbureau.nl/api';
+    this.rootUrl = 'http://uzb.dennis.uzbdev.nl/api';
   };
 
   // 20 minutes
@@ -115,7 +147,7 @@
    * @param {string} method The HTTP method to use
    * @param {string} url The path of the API that should be requested
    * @param {Object} options Parameters that should be send with the request
-   * @param {Function} done Callback for when the request is finished. First parameter will receive the response
+   * @param {Function} done Callback for when the request is finished. First parameter will receive the response, second parameter is the status code
    */
   UitzendbureauNLAPIConnector.prototype.performRequest = function(method, url, options, done) {
     if(typeof done === 'undefined' && typeof options === 'function') {
@@ -144,8 +176,14 @@
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     }
 
+    var self = this;
     xhr.onload = function() {
-      done(JSON.parse(xhr.responseText));
+      var data = null;
+      if(self._isValidJSON(xhr.responseText)) {
+        data = JSON.parse(xhr.responseText);
+      }
+
+      done(data, xhr.status);
     };
     xhr.onerror = function() {
       // There was an error! What should we do!?
@@ -153,6 +191,20 @@
 
     xhr.send(URI.buildQuery(options));
   };
+
+  /**
+   * Check if the given string is valid JSON.
+   * @param {string} str The string to check
+   * @return {boolean} True when the string is valid JSON, false otherwise.
+   */
+  UitzendbureauNLAPIConnector.prototype._isValidJSON = function(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
 
   window.UitzendbureauNLAPI = UitzendbureauNLAPI;
 })(URI);
