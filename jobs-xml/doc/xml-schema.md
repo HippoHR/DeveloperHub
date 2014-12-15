@@ -4,12 +4,10 @@ layout: default
 
 [Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; [Documentatie](/jobs-xml/doc) &raquo; Uitleg XML-schema
 
-[1. Algemene informatie](/jobs-xml/doc) &middot;
-2\. Uitleg XML-schema &middot;
-[3. Validatietool](/jobs-xml/doc/validation.html) &middot;
-[4. Aanmelden nieuwe XML-feed](/jobs-xml/doc/sign-up.html) &middot;
-[Optionele authorisatie](/jobs-xml/doc/auth.html) &middot;
-[Voorbeelden en hulpmiddelen](/jobs-xml/doc/examples.html)
+[Stap 1: Algemene informatie](/jobs-xml/doc) &middot;
+Stap 2: Uitleg XML-schema &middot;
+[Stap 3: Validatie](/jobs-xml/doc/validation.html) &middot;
+[Stap 4: Aanmelden](/jobs-xml/doc/sign-up.html)
 
 # Uitleg XML-schema
 

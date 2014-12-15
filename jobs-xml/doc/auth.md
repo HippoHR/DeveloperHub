@@ -4,13 +4,6 @@ layout: default
 
 [Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; [Documentatie](/jobs-xml/doc) &raquo; Uitleg XML-schema
 
-[1. Algemene informatie](/jobs-xml/doc) &middot;
-[2. Uitleg XML-schema](/jobs-xml/doc/xml-schema.html) &middot;
-[3. Validatietool](/jobs-xml/doc/validation.html) &middot;
-[4. Aanmelden nieuwe XML-feed](/jobs-xml/doc/sign-up.html) &middot;
-Optionele authorisatie &middot;
-[Voorbeelden en hulpmiddelen](/jobs-xml/doc/examples.html)
-
 # Authorisatie
 
 _Let op:_ deze authorisatie is optioneel. Je kunt deze authorisatie gebruiken als je niet wil dat je XML-feed toegankelijk is voor iedereen die de url van je

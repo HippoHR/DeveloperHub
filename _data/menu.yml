@@ -1,5 +1,7 @@
 - text: Home
   url: /
+- text: De vacaturemodule
+  url: /vacaturemodule.html
 - text: Vacatures plaatsen via XML
   url: /jobs-xml/
   subitems:
@@ -48,8 +50,6 @@
               url: /api/requests/applications/cv.html
             - text: /application/cv/extracted
               url: /api/requests/applications/cv-extracted.html
-- text: De vacaturemodule
-  url: /vacaturemodule.html
 - text: Widgets
   url: /widgets/
   subitems:

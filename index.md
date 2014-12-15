@@ -2,7 +2,13 @@
 layout: default
 ---
 
-# Overzicht Uitzendbureau.nl Developer Hub
+# DeveloperHub
+
+## De vacaturemodule
+
+De vacaturemodule toont jouw vacatures professioneel op je eigen website. Kandidaten kunnen hierdoor gemakkelijk op jouw website solliciteren.
+
+[Lees meer over de vacaturemodule &raquo;](/vacaturemodule.html)
 
 ## Vacatures automatisch doorsturen via een XML-feed
 
@@ -21,12 +27,6 @@ Als er nog geen [bestaande koppeling](/jobs-xml/integration-partners.html) is, k
 * [Uitgebreide documentatie](/api/doc.html) beschikbaar.
 
 [Meer informatie](/api) &middot; [Bekijk de API-documentatie](/api/doc.html)
-
-## De vacaturemodule
-
-De vacaturemodule toont jouw vacatures professioneel op je eigen website. Kandidaten kunnen hierdoor gemakkelijk op jouw website solliciteren.
-
-[Lees meer over de vacaturemodule &raquo;](/vacaturemodule.html)
 
 ## Widgets voor op je site
 
