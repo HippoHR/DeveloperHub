@@ -8,7 +8,7 @@ layout: default
 
 De vacaturemodule toont jouw vacatures professioneel op je eigen website. Kandidaten kunnen hierdoor gemakkelijk op jouw website solliciteren.
 
-[Lees meer over de vacaturemodule &raquo;](/vacaturemodule.html)
+[Lees meer over de vacaturemodule &raquo;](/vacaturemodule)
 
 ## Vacatures automatisch doorsturen via een XML-feed
 

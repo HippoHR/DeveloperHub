@@ -8,7 +8,7 @@ layout: default
 
 Met deze widget kun je gratis vacatures toevoegen aan je eigen website. Deze vacatures zijn altijd actueel, zonder dat jij hier iets voor hoeft te doen.
 
-Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacaturemodule](/vacaturemodule.html).
+Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacaturemodule](/vacaturemodule).
 
 ## Stap 1. Welke vacatures wil je tonen?
 
