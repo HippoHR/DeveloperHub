@@ -1,7 +1,12 @@
 - text: Home
   url: /
 - text: De vacaturemodule
-  url: /vacaturemodule.html
+  url: /vacaturemodule/
+  subitems:
+    - text: De vacaturemodule toevoegen
+      url: /vacaturemodule/vacaturemodule.html
+    - text: Het zoekformulier toevoegen
+      url: /vacaturemodule/zoekformulier.html
 - text: Vacatures plaatsen via XML
   url: /jobs-xml/
   subitems:

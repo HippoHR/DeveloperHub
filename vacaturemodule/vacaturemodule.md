@@ -2,23 +2,15 @@
 layout: default
 ---
 
-[Developer Hub](/) &raquo; De vacaturemodule
+[Developer Hub](/) &raquo; [De vacaturemodule](/vacaturemodule/) &raquo; De vacaturemodule toevoegen
 
-# Vacatures gratis op je website
+# De vacaturemodule
 
-## Toon jouw vacatures professioneel op je eigen website
+## Hoe werkt de vacaturemodule?
 
-Je kan **gratis** al jouw vacatures die op Uitzendbureau.nl staan op je eigen website tonen met de vacaturemodule van Uitzendbureau.nl. Kandidaten solliciteren
-op jouw website. Sollicitaties versturen we direct via e-mail en kun je verwerken via het RecruitmentCenter van Uitzendbureau.nl.
-
-## Hoe werkt het?
-Kies de naam van jouw uitzendbureau. Kopieer de code en voeg deze toe aan de HTML van je website. Jouw webbouwer kan hiermee helpen. Het kost slechts **een paar
-minuten**.
-
-Jouw vacatures blijven altijd up-to-date. Als je een vacature op Uitzendbureau.nl toevoegt, verschijnt deze automatisch op je eigen website. Je hebt dus **geen
-zorgen over de techniek of updates**.
-
-Bel 0478-640204 voor meer informatie over de vacaturemodule.
+De vacaturemodule kan via **twee eenvoudige stappen** ge&iuml;mplementeerd worden. Kies bij stap 1 de naam van jouw uitzendbureau.
+Na het selecteren verschijnt er een code waarmee de vacaturemodule aan je website kan worden toegevoegd.
+Kopieer de code en voeg deze toe aan de HTML van je website. Je webbouwer kan je hiermee helpen, of bel ons op 0478-640204 voor gratis hulp.
 
 ## Stap 1. Kies uitzendbureau
 
@@ -56,4 +48,4 @@ Bel 0478-640204 voor meer informatie over de vacaturemodule.
 <script src="/javascripts/external/uri.js"></script>
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/widgets/recruiter.js"></script>
-<script src="/javascripts/widgets/job-module.js"></script>
+<script src="/javascripts/job-module/job-module.js"></script>
