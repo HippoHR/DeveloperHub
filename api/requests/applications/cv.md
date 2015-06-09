@@ -104,6 +104,14 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                 <a href="mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fapplications%2Fcv%3A%20status%20500">techniek@uitzendbureau.nl</a>.
             </td>
         </tr>
+        <tr>
+            <td>
+                <strong>503</strong>
+            </td>
+            <td>
+                Vanwege onderhoud is de API tijdelijk niet beschikbaar.
+            </td>
+        </tr>
     </tbody>
 </table>
 
