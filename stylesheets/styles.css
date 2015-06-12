@@ -298,7 +298,8 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   line-height: normal;
@@ -348,20 +349,23 @@ textarea.form-control {
 .form-group {
   margin-bottom: 15px;
 }
-.radio {
+.radio,
+.checkbox {
   position: relative;
   display: block;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
-.radio label {
+.radio label,
+.checkbox label {
   min-height: 20px;
+  line-height: 20px;
   padding-left: 20px;
   margin-bottom: 0;
-  font-weight: normal;
   cursor: pointer;
 }
 .radio input[type="radio"],
+.checkbox input[type="checkbox"],
 .radio-inline input[type="radio"] {
   position: absolute;
   margin-left: -20px;
@@ -496,6 +500,25 @@ textarea.form-control {
   background-image: none;
 }
 
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #ABCBE7;
+  border-color: #94BDE1;
+}
+
 /**
  * Bootstrap 3.3.1 input groups
  * Note: Removed all the selectors that we do not use
@@ -577,8 +600,10 @@ textarea.form-control {
 }
 
 .col-sm-3,
+.col-sm-4,
 .col-sm-6,
-.col-sm-9 {
+.col-sm-9,
+.col-sm-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -586,9 +611,14 @@ textarea.form-control {
 }
 @media (min-width: 768px) {
   .col-sm-3,
+  .col-sm-4,
   .col-sm-6,
-  .col-sm-9 {
+  .col-sm-9,
+  .col-sm-12 {
     float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
   }
   .col-sm-9 {
     width: 75%;
@@ -596,8 +626,14 @@ textarea.form-control {
   .col-sm-6 {
     width: 50%;
   }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
   .col-sm-3 {
     width: 25%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
   }
   .col-sm-offset-3 {
     margin-left: 25%;
@@ -748,4 +784,19 @@ a.label-info:focus {
 }
 .alert-danger .alert-link {
   color: #843534;
+}
+.form-horizontal .control-label {
+  text-align:left;
+}
+
+/**
+ * Job-module step two
+ */
+
+.advanced {
+  cursor: pointer;
+}
+
+.example {
+  min-height: 800px;
 }
