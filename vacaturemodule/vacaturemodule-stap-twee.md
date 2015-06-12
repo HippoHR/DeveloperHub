@@ -204,3 +204,4 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
 <script src="/javascripts/widgets/recruiter.js"></script>
 <script src="/javascripts/job-module/job-module.js"></script>
 <script src="/javascripts/external/jscolor/jscolor.js"></script>
+<script src="/javascripts/job-module/job-module-controller.js"></script>

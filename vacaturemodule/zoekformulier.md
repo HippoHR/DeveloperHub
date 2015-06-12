@@ -59,3 +59,4 @@ Voor hulp bij het toevoegen van het zoekformulier kun je bellen naar 0478-640204
 <script src="/javascripts/external/uri.js"></script>
 <script src="/javascripts/layout/output-buffer.js"></script>
 <script src="/javascripts/job-module/search-form.js"></script>
+<script src="/javascripts/job-module/search-form-controller.js"></script>

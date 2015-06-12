@@ -1,50 +1,49 @@
-(function(URI, Recruiter) {
-  'use strict';
-
-  /**
-   * Class to handle the job widget form.
-   * @constructor
-   */
-  function JobModuleForm() {
-    this.recruiter = '';
-    this.checkBoxes = [
-      'hidedescription',
-      'hideplacetime',
-      'searchform'
-    ];
-    this.radioButtons = [
-      'buttontextcolor',
-      'pagebuttontextcolor'
-    ];
-    this.defaultValues = {
-      titlecolor: '428BCA',
-      textcolor: '333333',
-      footercolor: '3A9615',
-      fontsize: '14',
-      fonttype: 'Helvetica',
-      hidedescription: 'true',
-      hideplacetime: 'true',
-      searchform: 'false',
-      buttoncolor: '5CB85C',
-      buttontextcolor: 'FFFFFF',
-      bgcolor: 'FFFFFF',
-      hovercolor: 'F4F4FF',
-      pagebuttoncolor: '428BCA',
-      pagebuttontextcolor: 'FFFFFF',
-      loadingcolor: '11BAF2',
-      loadingcolorbackground: 'B5E9F7'
-    };
-    this.advancedValues = {
-      bgcolor: 'FFFFFF',
-      hovercolor: 'F4F4FF',
-      pagebuttoncolor: '428BCA',
-      pagebuttontextcolor: 'FFFFFF',
-      loadingcolor: '11BAF2',
-      loadingcolorbackground: 'B5E9F7'
-    };
-    this.design = {};
-    this.formSubmitted = false;
+/**
+ * Class to handle the job widget form
+ * @param {Object} URI is an object of the class URI
+ * @constructor
+ */
+function JobModuleForm(URI) {
+  this.URI = URI;
+  this.recruiter = '';
+  this.checkBoxes = [
+    'hidedescription',
+    'hideplacetime',
+    'searchform'
+  ];
+  this.radioButtons = [
+    'buttontextcolor',
+    'pagebuttontextcolor'
+  ];
+  this.defaultValues = {
+    titlecolor: '428BCA',
+    textcolor: '333333',
+    footercolor: '3A9615',
+    fontsize: '14',
+    fonttype: 'Helvetica',
+    hidedescription: 'true',
+    hideplacetime: 'true',
+    searchform: 'false',
+    buttoncolor: '5CB85C',
+    buttontextcolor: 'FFFFFF',
+    bgcolor: 'FFFFFF',
+    hovercolor: 'F4F4FF',
+    pagebuttoncolor: '428BCA',
+    pagebuttontextcolor: 'FFFFFF',
+    loadingcolor: '11BAF2',
+    loadingcolorbackground: 'B5E9F7'
   };
+  this.advancedValues = {
+    bgcolor: 'FFFFFF',
+    hovercolor: 'F4F4FF',
+    pagebuttoncolor: '428BCA',
+    pagebuttontextcolor: 'FFFFFF',
+    loadingcolor: '11BAF2',
+    loadingcolorbackground: 'B5E9F7'
+  };
+  this.design = {};
+  this.formSubmitted = false;
+};
 
   /**
    * Preparing the forms.
@@ -72,6 +71,7 @@
    * Function for preparing step two of the job-module.
    */
   JobModuleForm.prototype.prepareStepTwo = function() {
+
     var self = this;
     // Attach event to all the informationform checkboxes for when they get clicked.
     for(var i = 0; i < this.checkBoxes.length; i++) {
@@ -136,9 +136,10 @@
    * Method to load the values from the url parameters.
    */
   JobModuleForm.prototype.loadFromUrl = function() {
-    var params = URI.parseQuery(location.search);
+    var params = this.URI.parseQuery(location.search);
     this.recruiter = params.r || '';
-    if(document.location.pathname !== '/vacaturemodule/vacaturemodule-stap-een.html') {
+    if(document.location.pathname === '/vacaturemodule/vacaturemodule-stap-twee.html' ||
+      document.location.pathname === '/vacaturemodule/vacaturemodule-stap-drie.html') {
       // When recruiter is empty the page will redirect to vacaturemodule-stap-een.html.
       if(this.recruiter === '') {
         document.location = 'vacaturemodule-stap-een.html';
@@ -384,7 +385,7 @@
     var designform = document.getElementsByName('designform')[0];
     designform.className = designform.className.replace('hidden', '');
     if(!this.isDesignChoiceDefault() || e) {
-      form.disableEnableFields(true);
+      this.disableEnableFields(true);
     }
   };
 
@@ -427,7 +428,3 @@
       document.location = 'vacaturemodule-stap-twee.html?' + URI.buildQuery(search);
     }
   };
-
-  var form = new JobModuleForm();
-  form.prepare();
-})(URI, Recruiter);

@@ -23,3 +23,4 @@ Zo kunnen werkzoekenden snel en gemakkelijk hun ideale baan vinden op jouw websi
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/widgets/recruiter.js"></script>
 <script src="/javascripts/job-module/job-module.js"></script>
+<script src="/javascripts/job-module/job-module-controller.js"></script>
