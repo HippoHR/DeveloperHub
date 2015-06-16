@@ -1,6 +1,7 @@
 {
   "exclude": [
-    "(^_site/)"
+    "(^_site/)",
+    "(^javascripts/external/jscolor/)"
   ],
   "linters": {
     "filename": {

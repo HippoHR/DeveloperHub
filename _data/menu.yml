@@ -4,7 +4,7 @@
   url: /vacaturemodule/
   subitems:
     - text: De vacaturemodule toevoegen
-      url: /vacaturemodule/vacaturemodule.html
+      url: /vacaturemodule/vacaturemodule-stap-een.html
     - text: Het zoekformulier toevoegen
       url: /vacaturemodule/zoekformulier.html
 - text: Vacatures plaatsen via XML

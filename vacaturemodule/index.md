@@ -22,7 +22,7 @@ Benieuwd hoe de vacaturemodule eruit ziet? Bekijk het resultaat bij
 <a href="http://brabantmatch.nl/werknemer/actuele-vacatures" target="_blank">Brabant Match</a> en
 <a href="http://www.doenpersoneel.eu/vacatures.htm" target="_blank">DOEN! Personeel</a>.
 
-[Maak nu je eigen vacaturemodule &raquo;](/vacaturemodule/vacaturemodule.html)
+[Maak nu je eigen vacaturemodule &raquo;](/vacaturemodule/vacaturemodule-stap-een.html)
 
 ## Zoekformulier voor vacaturemodule
 
