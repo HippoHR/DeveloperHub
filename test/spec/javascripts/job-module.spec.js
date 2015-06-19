@@ -168,6 +168,7 @@ describe('job-module', function() {
 
   it('should set the design to default', function() {
     var form = createDOMElement('form', {className: 'hidden', name: 'designform'});
+    spyOn(form, 'submit');
     createInformationForm();
     testDiv.appendChild(form);
     var testDesign = createDesignChoiceForm();
@@ -177,6 +178,7 @@ describe('job-module', function() {
     expect(jobModuleForm.isDesignChoiceDefault()).toEqual(false);
     jobModuleForm.setToDefault();
     expect(jobModuleForm.isDesignChoiceDefault()).toEqual(true);
+    expect(form.submit).toHaveBeenCalled();
   });
 
   it('should show the advanced options when "Geavanceerde instellingen" is clicked and they are not yet unfolded', function() {

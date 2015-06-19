@@ -1,17 +1,17 @@
 (function(URI, SearchForm) {
   'use strict';
 
+  var searchForm = new SearchForm(URI);
+  searchForm.prepareForm();
+
   // Check if the form has been submitted
   if(URI.hasQuery()) {
     // Handle the submitted form
-    var searchForm = new SearchForm(URI);
-    searchForm.loadFromUrl();
-    searchForm.fillTheForm();
-    if(searchForm.orientation && searchForm.validateInput()) {
+    if(searchForm.validateInput()) {
+      searchForm.setMinHeightExample();
       searchForm.showTheCode();
       searchForm.showTheExample();
-    }
-    if(!searchForm.validateInput()) {
+    } else {
       searchForm.removeClass('hidden', 'url-validation-error');
     }
   }
