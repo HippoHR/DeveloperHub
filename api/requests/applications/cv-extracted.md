@@ -203,6 +203,14 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                   techniek@uitzendbureau.nl</a>.
             </td>
         </tr>
+        <tr>
+            <td>
+                <strong>503</strong>
+            </td>
+            <td>
+                Vanwege onderhoud is de API tijdelijk niet beschikbaar.
+            </td>
+        </tr>
     </tbody>
 </table>
 
