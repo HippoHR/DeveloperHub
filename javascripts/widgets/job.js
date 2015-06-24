@@ -41,25 +41,39 @@
     select.name = 'r';
     select.id = 'r';
     select.className = 'form-control';
-    // Now create options for all recruiters
+
+    // Add empty recruiter to give the user the abillity to view jobs from all recruiters.
+    this.addRecruiter('','Alle uitzendbureaus', select);
+
+    // Now create options for each recruiter
     for(var i = 0; i < recruiters.length; i++) {
-      var option = document.createElement('option');
-      option.value = recruiters[i].nameUrl;
-      option.appendChild(document.createTextNode(recruiters[i].name));
-
-      // Make sure the selected recruiter will be shown as selected in the form
-      if(this.recruiter && recruiters[i].nameUrl === this.recruiter) {
-        option.selected = true;
-      }
-
-      // Add the option to the select box
-      select.appendChild(option);
+      this.addRecruiter(recruiters[i].nameUrl, recruiters[i].name, select);
     }
 
     // Find the destination for our new select box. Replace the destination with this select box
     var destination = document.getElementById('recruiter-list-loader');
     destination.parentNode.replaceChild(select, destination);
   };
+
+  /**
+   * Method that adds a recruiter to the given select box.
+   * @param recruiterNameUrl The name of the recruiter as shown in URL
+   * @param recuiterName The name of the recruiter as shown for end user
+   * @param select The select box you want to add the recruiter to
+   **/
+  JobWidgetForm.prototype.addRecruiter = function(recruiterNameUrl, recruiterName, select) {
+    var option = document.createElement('option');
+    option.value = recruiterNameUrl;
+    option.appendChild(document.createTextNode(recruiterName));
+
+    // Make sure the selected recruiter will be shown as selected in the form
+    if(this.recruiter && recruiterNameUrl === this.recruiter) {
+      option.selected = true;
+    }
+
+    // Add the option to the select box
+    select.appendChild(option);
+  }
 
   /**
    * Method to load the instance from the url parameters
