@@ -341,7 +341,11 @@ JobModuleForm.prototype.setToDefault = function(e) {
         document.getElementById(elementId + 'white').checked = true;
         continue;
       }
-      document.getElementById(elementId).value = this.defaultValues[elementId];
+      if(document.getElementById(elementId).color) {
+        document.getElementById(elementId).color.fromString(this.defaultValues[elementId]);
+      } else {
+        document.getElementById(elementId).value = this.defaultValues[elementId];
+      }
     }
     var designform = document.getElementsByName('designform')[0];
     designform.action = '#designform';
