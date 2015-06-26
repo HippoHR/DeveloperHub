@@ -53,6 +53,9 @@
     // Find the destination for our new select box. Replace the destination with this select box
     var destination = document.getElementById('recruiter-list-loader');
     destination.parentNode.replaceChild(select, destination);
+
+    // Fill the recruiter select box with the correct value
+    document.getElementById('r').value = this.recruiter;
   };
 
   /**
