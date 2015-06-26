@@ -94,13 +94,21 @@
   JobWidgetForm.prototype.fillTheForm = function() {
     document.getElementById('s').value = this.search;
     document.getElementById('p').value = this.place;
-    document.getElementById('r').value = this.recruiter;
     document.getElementById('l').value = this.nrOfJobs;
     document.getElementById('w').value = this.width;
+    // Filling the recruiter is also done after loading the recruiterlist for first load.
+    // If the element exists update it (This is needed to update form when changes in url occur after first load).
+    var recruiterList = document.getElementById('r');
+    if(recruiterList) {
+      recruiterList.value = this.recruiter;
+    }
 
     // Update radius selector
     var radiusValue = this.radius ? this.radius + 'km' : 'Alles';
     jQuery('.radius-selector .btn .distance').text(radiusValue);
+
+    // Update the radius value. Needed to correctly generate widget from URL
+    $('#rad').val(this.radius);
   };
 
   /**
