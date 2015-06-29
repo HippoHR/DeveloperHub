@@ -118,6 +118,7 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="/javascripts/layout/jquery-custom-select-box.js"></script>
 <script src="/javascripts/external/bootstrap/dropdown.min.js"></script>
+<script src="/javascripts/external/hex_sha1.js"></script>
 <script src="/javascripts/external/uri.js"></script>
 <script src="/javascripts/layout/output-buffer.js"></script>
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>

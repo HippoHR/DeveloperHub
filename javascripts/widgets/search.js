@@ -5,7 +5,7 @@
    * Class to handle the search widget form
    * @constructor
    */
-  function SearchWidgetForm() {
+  var SearchWidgetForm = function() {
     this.orientation = '';
   };
 

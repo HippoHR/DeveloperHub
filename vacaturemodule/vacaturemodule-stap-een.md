@@ -41,6 +41,7 @@ website. Je webbouwer kan je hiermee helpen, of bel ons op 0478-640204 voor **gr
 </form>
 
 <script src="/javascripts/external/uri.js"></script>
+<script src="/javascripts/external/hex_sha1.js"></script>
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/widgets/recruiter.js"></script>
 <script src="/javascripts/job-module/job-module.js"></script>

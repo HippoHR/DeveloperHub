@@ -3,7 +3,7 @@
  * @param {Object} URI is an object of the class URI
  * @constructor
  */
-function JobModuleForm(URI) {
+var JobModuleForm = function(URI) {
   this.URI = URI;
   this.recruiter = '';
   this.checkBoxes = [
@@ -265,25 +265,25 @@ JobModuleForm.prototype.showTheExample = function() {
   document.body.appendChild(scriptTag);
 };
 
-/**
- * Method to build the script url from the form data.
- * @returns {String} The url of the job widget script.
- */
-JobModuleForm.prototype._getTheCode = function() {
-  var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' data-language="nl-NL" '+ this.getDesignChoices() +'>' +
-              '</div>' + "\n" +
-  "\n" +
-  '<script>' + "\n" +
-  '  (function(d, s, id) {' + "\n" +
-  '    var js, fjs = d.getElementsByTagName(s)[0];' + "\n" +
-  '    if (d.getElementById(id)) return;' + "\n" +
-  '    js = d.createElement(s); js.id = id;' + "\n" +
-  '    js.src = "//helios.uitzendbureau.nl/public/build/js/ext.min.js";' + "\n" +
-  '    fjs.parentNode.insertBefore(js, fjs);' + "\n" +
-  '  }(document, \'script\', \'helios-joboverview\'));' + "\n" +
-  '</script>';
-  return code;
-};
+  /**
+   * Method to build the script url from the form data.
+   * @returns {String} The url of the job widget script.
+   */
+  JobModuleForm.prototype._getTheCode = function() {
+    var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' data-language="nl-NL" '+ this.getDesignChoices() +'>' +
+                '</div>' + '\n' +
+    '\n' +
+    '<script>' + '\n' +
+    '  (function(d, s, id) {' + '\n' +
+    '    var js, fjs = d.getElementsByTagName(s)[0];' + '\n' +
+    '    if (d.getElementById(id)) return;' + '\n' +
+    '    js = d.createElement(s); js.id = id;' + '\n' +
+    '    js.src = "//helios.uitzendbureau.nl/public/build/js/ext.min.js";' + '\n' +
+    '    fjs.parentNode.insertBefore(js, fjs);' + '\n' +
+    '  }(document, \'script\', \'helios-joboverview\'));' + '\n' +
+    '</script>';
+    return code;
+  };
 
 /**
  * Function for creating a string with all the design choices.

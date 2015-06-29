@@ -225,18 +225,18 @@ describe('job-module', function() {
    * @returns {Object} URI object
    */
   function createURI() {
-    var URI = {};
-    URI.parseQuery = function() {
+    var URIMock = {};
+    URIMock.parseQuery = function() {
       return {r: recruiterId};
     };
-    URI.buildQuery = function(search) {
+    URIMock.buildQuery = function(search) {
       var string = '';
       for(var element in search) {
         string += '&' + element + '=' + search[element];
       }
       return string.substring(1);
     };
-    return URI;
+    return URIMock;
   }
 
   /**

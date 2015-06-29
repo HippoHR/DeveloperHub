@@ -3,8 +3,9 @@
  * @param {Object} URI is an object of the class URI
  * @constructor
  */
-function SearchForm(URI) {
-  this.URI = URI;
+var SearchForm = function(URI) {
+  this.orientation = '';
+  this.url = '';
   this.url = '';
   this.radioButtons = [
     'buttontextcolor',

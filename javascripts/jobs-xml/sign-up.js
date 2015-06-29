@@ -104,9 +104,9 @@
     };
 
     // Send the sign up request when the form has been submitted.
-    var form = document.getElementById('sign-up-form');
-    var signUp = new JobsXMLSignUp(form);
-    form.onsubmit = function() {
+    var signUpForm = document.getElementById('sign-up-form');
+    var signUp = new JobsXMLSignUp(signUpForm);
+    signUpForm.onsubmit = function() {
         // Sign up.
         signUp.submit();
 

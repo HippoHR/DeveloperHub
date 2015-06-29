@@ -5,7 +5,7 @@
    * Class to handle the job widget form
    * @constructor
    */
-  function JobWidgetForm() {
+  var JobWidgetForm = function() {
     this.search = '';
     this.place = '';
     this.radius = '';

@@ -1,5 +1,4 @@
 describe('search-form', function() {
-
   var searchForm, URI, testDiv, color, changedColor, expectedColor;
   var designChoices = {
     orientation: 'horizontal',
@@ -223,7 +222,7 @@ describe('search-form', function() {
     expect(div.className).toContain('testclass');
   });
 
-  it('should remove only the given class from an element when the given class is in the middle of the classname', function() {
+ it('should remove only the given class from an element when the given class is in the middle of the classname', function() {
     var div = createDOMElement('div', {id: 'testId', className: 'testclass hidden another-class'});
     testDiv.appendChild(div);
     searchForm.removeClass('hidden', 'testId');
@@ -233,11 +232,17 @@ describe('search-form', function() {
   });
 
   function createURI() {
+<<<<<<< HEAD
+    var URIMock = {};
+    URIMock.parseQuery = function() {
+      return {orientation: 'horizontal', url: 'http://www.vacatures.nl'};
+=======
     var URI = {};
     URI.parseQuery = function() {
       return designChoices;
+>>>>>>> gh-pages
     };
-    return URI;
+    return URIMock;
   }
 
   function createForm() {

@@ -200,6 +200,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
 </div>
 
 <script src="/javascripts/external/uri.js"></script>
+<script src="/javascripts/external/hex_sha1.js"></script>
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/widgets/recruiter.js"></script>
 <script src="/javascripts/job-module/job-module.js"></script>

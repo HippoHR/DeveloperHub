@@ -10,7 +10,7 @@ var OutputBuffer = (function(){
    * @constructor
    * @returns {OutputBuffer}
    */
-  function OutputBuffer() {}
+  function OutputBuffer() {};
 
   /**
    * Method to start the buffering of the document.write output

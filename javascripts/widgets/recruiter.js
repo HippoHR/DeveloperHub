@@ -1,7 +1,7 @@
 (function(UitzendbureauNLAPI) {
   var uitzendbureauNLAPI = new UitzendbureauNLAPI();
 
-  function Recruiter() {}
+  var Recruiter = function() {}
 
   Recruiter.Cache = window.sessionStorage;
 

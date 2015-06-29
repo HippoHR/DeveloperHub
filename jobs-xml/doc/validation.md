@@ -61,5 +61,6 @@ Indien er [authorisatie](/jobs-xml/doc/auth.html) nodig is, dan kun je de **voll
 </div>
 
 <script src="/javascripts/external/uri.js"></script>
+<script src="/javascripts/external/hex_sha1.js"></script>
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/jobs-xml/validation.js"></script>
