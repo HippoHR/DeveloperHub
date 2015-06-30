@@ -1,0 +1,48 @@
+{
+    "disallowEmptyBlocks": true,
+    "disallowMultipleLineBreaks": true,
+    "disallowNewlineBeforeBlockStatements": true,
+    "disallowOperatorBeforeLineBreak": ["."],
+    "disallowPaddingNewlinesInBlocks": true,
+    "disallowSpaceAfterKeywords": ["if", "for", "while", "do", "switch", "catch"],
+    "disallowSpaceAfterObjectKeys": true,
+    "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+    "disallowSpacesInCallExpression": true,
+    // Covers "disallowSpacesInAnonymousFunctionExpression", "disallowSpacesInNamedFunctionExpression" and "disallowSpacesInFunctionDeclaration"
+    "disallowSpacesInFunction": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInsideBrackets": true,
+    "disallowSpacesInsideParentheses": true,
+    "disallowTrailingComma": true,
+    "disallowYodaConditions": true,
+    "requireBlocksOnNewline": true,
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "requireCapitalizedConstructors": true,
+    "requireCommaBeforeLineBreak": true,
+    "requireCurlyBraces": ["if", "else", "for", "while", "do", "switch", "try", "catch"],
+    "requireDotNotation": true,
+    "requireLineBreakAfterVariableAssignment": true,
+    "requireOperatorBeforeLineBreak": ["?", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="],
+    "requireParenthesesAroundIIFE": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "requireSpaceAfterKeywords": ["case", "return", "typeof", "try"],
+    "requireSpaceAfterLineComment": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceBeforeObjectValues": true,
+    "requireSpaceBetweenArguments": true,
+    // Covers both "requireSpacesInFunctionDeclaration" and "requireSpacesInFunctionExpression"
+    "requireSpacesInFunction": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+    "requireSpacesInForStatement": true,
+    "safeContextKeyword": ["that", "self"],
+    "validateQuoteMarks": "'"
+}

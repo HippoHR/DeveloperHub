@@ -1,7 +1,7 @@
 {
   "exclude": [
     "(^_site/)",
-    "(^javascripts/external/jscolor/)"
+    "(^javascripts/external/)"
   ],
   "linters": {
     "filename": {
@@ -27,6 +27,14 @@
       "exclude": [
         "(^images)"
       ]
+    },
+    "jscs": {
+      "type": "jscs",
+      "include": "(\\.js$)",
+      "exclude": [
+        "(^javascripts/external/)"
+      ],
+      "jscs.config": ".jscsrc"
     }
   }
 }
