@@ -5,7 +5,7 @@
  */
 var SearchForm = function(URI) {
   this.orientation = '';
-  this.url = '';
+  this.URI = URI;
   this.url = '';
   this.radioButtons = [
     'buttontextcolor',
