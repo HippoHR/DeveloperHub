@@ -142,7 +142,7 @@ SearchForm.prototype.setScriptVariables = function() {
   }
   variables += ' buttonbordercolor: \'' + this.lightenDarkenColor('#' + this.design.buttoncolor, -10) + '\',';
   variables += ' buttonhovercolor: \'' + this.lightenDarkenColor('#' + this.design.buttoncolor, -20) + '\'};';
-  return variables + '\n' + 'var heliosParentUrl = \''+ this.url +'\'; var heliosFormOrientation = \''+ this.design.orientation +'\';' ;
+  return variables + '\n' + 'var heliosParentUrl = \'' + this.url + '\'; var heliosFormOrientation = \'' + this.design.orientation + '\';' ;
 };
 
 /**

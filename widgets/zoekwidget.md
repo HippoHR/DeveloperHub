@@ -50,3 +50,4 @@ Wil je liever een lijst met vacatures, op basis van een vaste zoekopdracht aanbi
 <script src="/javascripts/external/uri.js"></script>
 <script src="/javascripts/layout/output-buffer.js"></script>
 <script src="/javascripts/widgets/search.js"></script>
+<script src="/javascripts/widgets/search-controller.js"></script>
