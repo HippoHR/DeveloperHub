@@ -124,3 +124,4 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/widgets/recruiter.js"></script>
 <script src="/javascripts/widgets/job.js"></script>
+<script src="/javascripts/widgets/job-controller.js"></script>
