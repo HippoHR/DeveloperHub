@@ -12,7 +12,7 @@ De vacaturemodule kan via **een paar eenvoudige stappen** in een website ge&iuml
 
 Kies bij stap 1 de naam van jouw uitzendbureau. Bij stap 2 kun je als je wil elementen bij de module toevoegen en verwijderen en de stijl van de module
 aanpassen. Daarna verschijnt er een code waarmee de vacaturemodule aan je website kan worden toegevoegd. Kopieer de code en voeg deze toe aan de HTML van je
-website. Je webbouwer kan je hiermee helpen, of bel ons op 0478-640204 voor **gratis hulp**.
+website. Je webbouwer kan je hiermee helpen, of bel ons op 085-4019579 voor **gratis hulp**.
 
 **Stap 1**: Kies uitzendbureau
 **Stap 2**: Pas de opmaak van de vacaturemodule aan naar je eigen website

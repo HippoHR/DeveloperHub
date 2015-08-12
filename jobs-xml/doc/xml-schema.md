@@ -92,7 +92,7 @@ De datum waarop de vacature is toegevoegd in jullie systeem. Gebruik het formaat
 ### hotJob
 
 Je kunt `hotJob` gebruiken als je een overeenkomst hebt met Uitzendbureau.nl voor topvacatures. Voor meer informatie over de mogelijkheden van topvacatures
-kun je contact opnemen met [sales@uitzendbureau.nl](mailto:sales@uitzendbureau.nl?subject=DeveloperHub%3A%20Topvacatures), of bellen naar 0478-640204.
+kun je contact opnemen met [sales@uitzendbureau.nl](mailto:sales@uitzendbureau.nl?subject=DeveloperHub%3A%20Topvacatures), of bellen naar 085-4019579.
 
 {% highlight xml %}
 <hotJob>

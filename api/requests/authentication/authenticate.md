@@ -37,7 +37,7 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
 
 |**400** |Controleer de meegestuurde parameters. Ben je `sessionId` of `response` vergeten, of zijn de waarden leeg?
 |**401** |De authenticatie is mislukt.
-|**500** |Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of [techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fauthentication%2Fauthenticate%3A%20status%20500).
+|**500** |Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 085-4019579 of [techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fauthentication%2Fauthenticate%3A%20status%20500).
 |**503** |Vanwege onderhoud is de API tijdelijk niet beschikbaar.
 
 ## Voorbeeldresponse

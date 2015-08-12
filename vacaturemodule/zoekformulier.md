@@ -9,7 +9,7 @@ layout: default
 Het zoekformulier van de vacaturemodule kun je gratis en in een paar eenvoudige stappen toevoegen op je website.
 Zo kunnen werkzoekenden gemakkelijk en snel de vacature vinden waar ze naar op zoek zijn.
 
-Voor hulp bij het toevoegen van het zoekformulier kun je bellen naar 0478-640204.
+Voor hulp bij het toevoegen van het zoekformulier kun je bellen naar 085-4019579.
 
 ## Stap 1. Op welke pagina van je website worden de vacatures getoond?
 <form name="searchwidgetform" action="#design" class="form-horizontal">

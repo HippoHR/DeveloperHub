@@ -18,7 +18,7 @@ De API werkt via HTTP POST. De mee te sturen parameters dienen dus als POST-waar
 ## Aan de slag
 
 1. Vraag een authenticatiesleutel aan door te e-mailen naar
-[techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20Aanvraag%20authenticatiesleutel%20API), of te bellen naar 0478-640204.
+[techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20Aanvraag%20authenticatiesleutel%20API), of te bellen naar 085-4019579.
 Bewaar de sleutel goed, en ga ermee om als een waardevol wachtwoord.
 
 2. De eerste stap bij het implementeren van de API is de authenticatie. Bekijk de [uitgebreide beschrijving](/api/auth.html).

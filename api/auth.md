@@ -8,7 +8,7 @@ layout: default
 
 ## Authenticatiesleutel
 
-Iedere gebruiker van de API heeft zijn eigen authenticatiesleutel. Heb je nog geen sleutel voor jouw uitzendbureau? Je kunt deze aanvragen via tel. 0478-640204
+Iedere gebruiker van de API heeft zijn eigen authenticatiesleutel. Heb je nog geen sleutel voor jouw uitzendbureau? Je kunt deze aanvragen via tel. 085-4019579
 of [techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20Aanvraag%20authenticatiesleutel%20API). Bewaar deze sleutel goed, en
 ga ermee om als een waardevol wachtwoord.
 

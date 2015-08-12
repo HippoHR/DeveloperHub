@@ -100,7 +100,7 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                 <strong>500</strong>
             </td>
             <td>
-                Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 0478-640204 of
+                Er is een onverwachte fout opgetreden. Indien deze fout optreedt, neem dan contact op met ons via 085-4019579 of
                 <a href="mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20API%20%2Fapplications%2Fcv%3A%20status%20500">techniek@uitzendbureau.nl</a>.
             </td>
         </tr>

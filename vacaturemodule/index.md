@@ -16,7 +16,7 @@ verschijnt deze automatisch op je eigen website.
 Je hebt dus geen **zorgen over de techniek of updates**.
 
 Het toevoegen van de vacaturemodule aan je website kost slechts **een paar minuten**.
-Hulp nodig? Bel 0478-640204, wij bieden **kosteloos een helpende hand** bij de implementatie.
+Hulp nodig? Bel 085-4019579, wij bieden **kosteloos een helpende hand** bij de implementatie.
 
 Benieuwd hoe de vacaturemodule eruit ziet? Bekijk het resultaat bij
 <a href="http://brabantmatch.nl/werknemer/actuele-vacatures" target="_blank">Brabant Match</a> en
