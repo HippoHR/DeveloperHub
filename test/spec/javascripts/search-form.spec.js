@@ -232,15 +232,9 @@ describe('search-form', function() {
   });
 
   function createURI() {
-<<<<<<< HEAD
     var URIMock = {};
     URIMock.parseQuery = function() {
-      return {orientation: 'horizontal', url: 'http://www.vacatures.nl'};
-=======
-    var URI = {};
-    URI.parseQuery = function() {
       return designChoices;
->>>>>>> gh-pages
     };
     return URIMock;
   }
