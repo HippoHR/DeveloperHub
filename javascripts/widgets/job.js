@@ -65,17 +65,17 @@ JobWidgetForm.prototype.showRecruiterList = function(recruiters) {
  * @param select The select box you want to add the recruiter to
  */
 JobWidgetForm.prototype.addRecruiter = function(recruiterNameUrl, recruiterName, select) {
- var option = document.createElement('option');
- option.value = recruiterNameUrl;
- option.appendChild(document.createTextNode(recruiterName));
+  var option = document.createElement('option');
+  option.value = recruiterNameUrl;
+  option.appendChild(document.createTextNode(recruiterName));
 
- // Make sure the selected recruiter will be shown as selected in the form
- if(this.recruiter && recruiterNameUrl === this.recruiter) {
-   option.selected = true;
- }
+  // Make sure the selected recruiter will be shown as selected in the form
+  if(this.recruiter && recruiterNameUrl === this.recruiter) {
+    option.selected = true;
+  }
 
- // Add the option to the select box
- select.appendChild(option);
+  // Add the option to the select box
+  select.appendChild(option);
 };
 
 /**
@@ -178,5 +178,5 @@ JobWidgetForm.prototype._getScriptUrl = function() {
     w: this.width
   };
 
-  return 'http://www.uitzendbureau.nl/tools/vacaturewidget?' + this.URI.buildQuery(params);
+  return 'http://www.uitzendbureau.nl/tools/vacaturewidget?' + URI.buildQuery(params);
 };
