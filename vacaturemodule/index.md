@@ -9,11 +9,11 @@ layout: default
 ## Toon jouw vacatures professioneel op je eigen website
 
 Je kan **gratis** al jouw vacatures die op Uitzendbureau.nl staan op je eigen website tonen met de vacaturemodule van Uitzendbureau.nl.
-Kandidaten **solliciteren** op jouw website. Sollicitaties versturen we direct via e-mail en kun je verwerken via het RecruitmentCenter van Uitzendbureau.nl.
+Kandidaten **solliciteren op jouw website**. Sollicitaties versturen we direct via e-mail en kun je verwerken via het RecruitmentCenter van Uitzendbureau.nl.
 Jouw vacatures blijven altijd up-to-date.
 Als je een vacature op Uitzendbureau.nl toevoegt,
 verschijnt deze automatisch op je eigen website.
-Je hebt dus geen **zorgen over de techniek of updates**.
+Je hebt dus **geen zorgen over de techniek of updates**.
 
 Het toevoegen van de vacaturemodule aan je website kost slechts **een paar minuten**.
 Hulp nodig? Bel 085-4019579, wij bieden **kosteloos een helpende hand** bij de implementatie.
