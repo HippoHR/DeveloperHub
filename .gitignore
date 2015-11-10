@@ -1,3 +1,14 @@
+# Generated site
 _site/
+
+# IDEs
 nbproject/
 .idea/
+
+# Modules required when developing
+/node_modules
+
+# Generated test reports
+test/TEST-public.xml
+test/coverage
+test/all-lcov.info

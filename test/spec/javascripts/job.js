@@ -1,4 +1,4 @@
-describe('job-widget', function() {
+describe('spec/javascripts/job', function() {
   // Object containing all the form fields
   var formFields = {};
 

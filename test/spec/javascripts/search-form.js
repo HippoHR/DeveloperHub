@@ -1,4 +1,4 @@
-describe('search-form', function() {
+describe('spec/javascripts/search-form', function() {
   var searchForm, URI, testDiv, color, changedColor, expectedColor;
   var designChoices = {
     orientation: 'horizontal',

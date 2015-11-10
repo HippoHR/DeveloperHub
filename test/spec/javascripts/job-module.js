@@ -1,5 +1,4 @@
-describe('job-module', function() {
-
+describe('spec/javascripts/job-module', function() {
   var jobModuleForm, URI, testDiv;
   var recruiterId = '515';
 

@@ -1,4 +1,4 @@
-describe('search-widget', function() {
+describe('spec/javascripts/search', function() {
   var searchWidget;
 
   // Object containing all parameters for the url
