@@ -46,7 +46,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
 <form name="designform" action="#example" id="designform" class="form-horizontal hidden">
   <input id="recruiterId" type="hidden" name="r" class="form-control" />
   <h3> Tekst </h3>
-  <div class="col-sm-offset-1 ">
+  <div class="col-sm-offset-1">
     <div class="form-group">
       <label for="fonttype" class="control-label col-sm-3">Lettertype</label>
       <div class="col-sm-3">
@@ -126,7 +126,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
 
   <div id="advancedOptions" class="hidden">
     <h3> Achtergrond </h3>
-    <div class="col-sm-offset-1 ">
+    <div class="col-sm-offset-1">
       <div class="form-group">
         <label for="bgcolor" class="control-label col-sm-3">Achtergrondkleur</label>
         <div class="col-sm-3">
@@ -134,7 +134,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
         </div>
       </div>
     </div>
-    <div class="col-sm-offset-1 ">
+    <div class="col-sm-offset-1">
       <div class="form-group">
         <label for="hovercolor" class="control-label col-sm-3">Hoverkleur</label>
         <div class="col-sm-3">
@@ -144,7 +144,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
     </div>
 
     <h3> Paginering </h3>
-    <div class="col-sm-offset-1 ">
+    <div class="col-sm-offset-1">
       <div class="form-group">
         <label for="pagebuttoncolor" class="control-label col-sm-3">Kleur paginering</label>
         <div class="col-sm-3">
@@ -165,7 +165,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
     </div>
 
     <h3> Laad icoon </h3>
-    <div class="col-sm-offset-1 ">
+    <div class="col-sm-offset-1">
       <div class="form-group">
         <label for="loadingcolor" class="control-label col-sm-3">Laad icoon kleur</label>
         <div class="col-sm-3">
@@ -179,17 +179,33 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
         </div>
       </div>
     </div>
-  </div>
-  <br>
-  <a id="default" href="#designform">Terug naar standaardinstellingen</a>
-  <br>
-  <br>
-  <div class="form-group">
-    <div class="col-sm-12">
-      <input type="submit" value="Toon de module!" class="btn btn-primary" />
-      <input id="buttonDone" type="submit" value="Verder naar volgende stap" class="btn btn-primary" />
+    
+    <h3> Taalkeuze </h3>
+    <div class="col-sm-offset-1">
+      <div class="form-group">
+        <label for="loadingcolor" class="control-label col-sm-3">Taal</label>
+        <div class="col-sm-3">
+          <select id="language" name="language" class="form-control">
+            <option value="nl-NL">Nederlands</option>
+            <option value="en-US">Engels</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-offset-1 col-sm-6 noPaddingLeft">
+      <div class="help-block"> Het instellen van de taal heeft geen invloed op de vacatureteksten. Deze worden getoond zoals ze op Uitzendbureau.nl staan.</div>
     </div>
   </div>
+  <br>
+  <div class="col-sm-6 noPaddingLeft margin15Top">
+    <a id="default" href="#designform">Terug naar standaardinstellingen</a>
+  </div>
+   <div class="form-group">
+    <div class="col-sm-12 margin15Top">
+        <input type="submit" value="Toon de module!" class="btn btn-primary" />
+        <input id="buttonDone" type="submit" value="Verder naar volgende stap" class="btn btn-primary" />
+    </div>
+   </div>
 </form>
 
 <div class="example" id="example">

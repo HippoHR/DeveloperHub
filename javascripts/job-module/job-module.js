@@ -16,6 +16,7 @@ var JobModuleForm = function(URI) {
     'pagebuttontextcolor'
   ];
   this.defaultValues = {
+    language: 'nl-NL',
     titlecolor: '428BCA',
     textcolor: '333333',
     footercolor: '3A9615',
@@ -72,7 +73,6 @@ JobModuleForm.prototype.prepareStepOne = function() {
  * Function for preparing step two of the job-module.
  */
 JobModuleForm.prototype.prepareStepTwo = function() {
-
   var self = this;
   // Attach event to all the informationform checkboxes for when they get clicked.
   for(var i = 0; i < this.checkBoxes.length; i++) {
@@ -140,6 +140,7 @@ JobModuleForm.prototype.loadFromUrl = function() {
   var params = this.URI.parseQuery(location.search);
   this.recruiter = params.r || '';
   if(this.location === '/vacaturemodule/vacaturemodule-stap-twee.html' || this.location === '/vacaturemodule/vacaturemodule-stap-drie.html') {
+    this.language = params.language;
     // When recruiter is empty the page will redirect to vacaturemodule-stap-een.html.
     if(this.recruiter === '') {
       this.changeLocation('vacaturemodule-stap-een.html');
@@ -270,9 +271,8 @@ JobModuleForm.prototype.showTheExample = function() {
    * @returns {String} The url of the job widget script.
    */
   JobModuleForm.prototype._getTheCode = function() {
-    var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' data-language="nl-NL" '+ this.getDesignChoices() +'>' +
-                '</div>' + '\n' +
-    '\n' +
+    var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' ' + this.getDesignChoices() + '>' + '</div>' + '\n'
+      + '\n' +
     '<script>' + '\n' +
     '  (function(d, s, id) {' + '\n' +
     '    var js, fjs = d.getElementsByTagName(s)[0];' + '\n' +
@@ -410,7 +410,7 @@ JobModuleForm.prototype.goToStepThree = function() {
 JobModuleForm.prototype.disableEnableFields = function(disable) {
   var defaultDesignButton = document.getElementById('default-design-button');
   defaultDesignButton.disabled = disable;
-  for(var i =0; i < this.checkBoxes.length; i++) {
+  for(var i = 0; i < this.checkBoxes.length; i++) {
     document.getElementById('informationform-' + this.checkBoxes[i]).disabled = disable;
   }
 };
@@ -424,7 +424,7 @@ JobModuleForm.prototype.submitCheckBoxes = function() {
   if(!defaultDesignButton.disabled) {
     var search = {};
     search.r = this.recruiter;
-    for(var i =0; i < this.checkBoxes.length; i++) {
+    for(var i = 0; i < this.checkBoxes.length; i++) {
       if(this.checkBoxes[i].indexOf('hide') === 0) {
         search[this.checkBoxes[i].substring(4)] = document.getElementById('informationform-' + this.checkBoxes[i]).checked;
       } else {

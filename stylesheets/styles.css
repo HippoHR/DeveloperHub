@@ -800,3 +800,11 @@ a.label-info:focus {
 .example {
   min-height: 800px;
 }
+
+.noPaddingLeft {
+  padding-left: 0;
+}
+
+.margin15Top {
+  margin-top: 15px;
+}
