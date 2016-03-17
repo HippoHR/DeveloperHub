@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 [Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; [Documentatie](/jobs-xml/doc) &raquo; Voorbeelden en hulpmiddelen

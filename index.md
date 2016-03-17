@@ -1,5 +1,6 @@
 ---
-layout: default
+metaKeywords: vacaturemodule, API, widget, xml-feed
+metaDescription: De how-to's voor de gratis vacaturemodule, voor het automatisch doorsturen van vacatures via een XML-feed, voor de API en voor andere widgets van Uitzendbureau.nl
 ---
 
 # DeveloperHub

@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 [Developer Hub](/) &raquo; [De vacaturemodule](/vacaturemodule/) &raquo; Het zoekformulier toevoegen

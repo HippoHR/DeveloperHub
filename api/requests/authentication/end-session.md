@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 [Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo; /authentication/end-session

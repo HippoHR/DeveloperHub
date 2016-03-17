@@ -1,5 +1,6 @@
 ---
-layout: default
+metaDescription: Vacatures toevoegen aan je eigen website. Toon alles, of filter op regio, beroep of uitzendbureau
+metaKeywords: vacaturewidget, zoekwidget
 ---
 
 [Developer Hub](/) &raquo; Widgets

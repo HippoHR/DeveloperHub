@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 [Developer Hub](/) &raquo; [Widgets](/widgets/) &raquo; De vacaturewidget

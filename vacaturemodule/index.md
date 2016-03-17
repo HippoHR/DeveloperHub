@@ -1,5 +1,6 @@
 ---
-layout: default
+metaDescription: Vacatures op je eigen website via de gratis vacaturemodule van Uitzendbureau.nl
+metaKeywords: vacaturemodule, zoekformulier
 ---
 
 [Developer Hub](/) &raquo; De vacaturemodule
