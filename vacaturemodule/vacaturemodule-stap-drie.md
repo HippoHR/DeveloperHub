@@ -5,7 +5,7 @@
 
 # De vacaturemodule
 
-## Stap 3. Kopieer deze code naar de HTML van je website</h2>
+## Stap 3. Kopieer deze code naar de HTML van je website
 
 <p>
   <textarea id="code-body" class="form-control" onclick="this.focus();this.select();" rows="15"></textarea>
