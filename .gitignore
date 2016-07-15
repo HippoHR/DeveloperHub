@@ -9,6 +9,6 @@ nbproject/
 /node_modules
 
 # Generated test reports
-test/TEST-public.xml
-test/coverage
-test/all-lcov.info
+/test/ut_report.xml
+/test/coverage
+/test/all-lcov.info

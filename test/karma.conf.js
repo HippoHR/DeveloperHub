@@ -37,7 +37,7 @@ module.exports = function(config) {
         ],
 
         // test results reporter to use
-        reporters: ['progress', 'coverage', 'junit'],
+        reporters: ['progress', 'coverage', 'sonarqubeUnit'],
 
         // coverage
         preprocessors: {
@@ -53,10 +53,21 @@ module.exports = function(config) {
             dir: 'test/coverage/'
         },
 
-        junitReporter: {
+        sonarQubeUnitReporter: {
             outputDir: 'test',
-            outputFile: 'TEST-public.xml',
-            useBrowserName: false
+            outputFile: 'ut_report.xml',
+            useBrowserName: false,
+            filenameFormatter: function(path) {
+                return 'test/' + path.replace(/\./g, '/') + '.js';
+            },
+            testnameFormatter: function(testname, result) {
+                var prefixName = '';
+                // Skip the first prefix (index 0), because it is the filename
+                for(var i = 1, l = result.suite.length; i < l; i++) {
+                    prefixName += result.suite[i] + ' ';
+                }
+                return prefixName + testname;
+            }
         },
 
         // web server port
