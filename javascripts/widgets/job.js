@@ -82,7 +82,7 @@ JobWidgetForm.prototype.addRecruiter = function(recruiterNameUrl, recruiterName,
  * Method to load the instance from the url parameters
  */
 JobWidgetForm.prototype.loadFromUrl = function() {
-  var params = this.URI.parseQuery(location.search);
+  var params = this.URI.parseQuery(location.search, '+');
   this.search = params.s || '';
   this.place = params.p || '';
   this.radius = params.rad || '';

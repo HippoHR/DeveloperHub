@@ -3,6 +3,7 @@
  * @type type
  */
 var URI = {};
+
 function escapeForDumbFirefox36(value) {
   // https://github.com/medialize/URI.js/issues/91
   return escape(value);
