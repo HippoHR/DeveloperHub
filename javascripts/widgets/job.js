@@ -38,8 +38,8 @@ JobWidgetForm.prototype.prepareRecruiters = function() {
 JobWidgetForm.prototype.showRecruiterList = function(recruiters) {
  // Create the select box to show the recruiters in
  var select = document.createElement('select');
- select.name = 'r';
- select.id = 'r';
+ select.name = 'rid';
+ select.id = 'rid';
  select.className = 'form-control';
 
  // Add empty recruiter to give the user the abillity to view jobs from all recruiters.
@@ -47,7 +47,7 @@ JobWidgetForm.prototype.showRecruiterList = function(recruiters) {
 
  // Now create options for each recruiter
  for(var i = 0; i < recruiters.length; i++) {
-   this.addRecruiter(recruiters[i].nameUrl, recruiters[i].name, select);
+   this.addRecruiter(recruiters[i].id, recruiters[i].name, select);
  }
 
  // Find the destination for our new select box. Replace the destination with this select box
@@ -55,22 +55,22 @@ JobWidgetForm.prototype.showRecruiterList = function(recruiters) {
  destination.parentNode.replaceChild(select, destination);
 
  // Fill the recruiter select box with the correct value
- document.getElementById('r').value = this.recruiter;
+ document.getElementById('rid').value = this.recruiter;
 };
 
 /**
  * Method that adds a recruiter to the given select box.
- * @param recruiterNameUrl The name of the recruiter as shown in URL
+ * @param recruiterId The id of the recruiter as shown in URL
  * @param recruiterName The name of the recruiter as shown for end user
  * @param select The select box you want to add the recruiter to
  */
-JobWidgetForm.prototype.addRecruiter = function(recruiterNameUrl, recruiterName, select) {
+JobWidgetForm.prototype.addRecruiter = function(recruiterId, recruiterName, select) {
   var option = document.createElement('option');
-  option.value = recruiterNameUrl;
+  option.value = recruiterId;
   option.appendChild(document.createTextNode(recruiterName));
 
   // Make sure the selected recruiter will be shown as selected in the form
-  if(this.recruiter && recruiterNameUrl === this.recruiter) {
+  if(this.recruiter && recruiterId === this.recruiter) {
     option.selected = true;
   }
 
@@ -86,7 +86,7 @@ JobWidgetForm.prototype.loadFromUrl = function() {
   this.search = params.s || '';
   this.place = params.p || '';
   this.radius = params.rad || '';
-  this.recruiter = params.r || '';
+  this.recruiter = params.rid || '';
   this.nrOfJobs = params.l || '';
   this.width = params.w || '';
 };
@@ -101,7 +101,7 @@ JobWidgetForm.prototype.fillTheForm = function() {
   document.getElementById('w').value = this.width;
   // Filling the recruiter is also done after loading the recruiterlist for first load.
   // If the element exists update it (This is needed to update form when changes in url occur after first load).
-  var recruiterList = document.getElementById('r');
+  var recruiterList = document.getElementById('rid');
   if(recruiterList) {
     recruiterList.value = this.recruiter;
   }
@@ -173,7 +173,7 @@ JobWidgetForm.prototype._getScriptUrl = function() {
     s: this.search,
     p: this.place,
     rad: this.radius,
-    r: this.recruiter,
+    rid: this.recruiter,
     l: this.nrOfJobs,
     w: this.width
   };

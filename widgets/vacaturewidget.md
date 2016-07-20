@@ -54,7 +54,7 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
   </div>
 
   <div class="form-group">
-    <label for="r" class="control-label col-sm-3">Uitzendbureau</label>
+    <label for="rid" class="control-label col-sm-3">Uitzendbureau</label>
     <div class="col-sm-6">
       <p class="form-control-static" id="recruiter-list-loader">
         <img src="/images/loading.gif" alt="Even geduld." class="loader--small" />
