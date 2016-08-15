@@ -13,7 +13,7 @@ aanroepen waarvoor authenticatie is vereist.
 ## Request
 
 |**URL**          |http://www.uitzendbureau.nl/api/authentication/authenticate
-|**HTTP-methode** |POST
+|**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters
 

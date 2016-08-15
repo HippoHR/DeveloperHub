@@ -10,7 +10,7 @@ Download een cv, dat is meegestuurd bij een sollicitatie.
 ## Request
 
 |**URL**          |http://www.uitzendbureau.nl/api/application/cv
-|**HTTP-methode** |POST
+|**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters
 
@@ -21,7 +21,7 @@ Download een cv, dat is meegestuurd bij een sollicitatie.
 
 ## Response
 
-De gegevens worden aangeboden in JSON-formaat.
+De response wordt aangeboden in JSON-formaat.
 
 ## Velden
 

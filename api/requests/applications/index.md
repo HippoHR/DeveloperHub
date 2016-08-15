@@ -12,7 +12,7 @@ _Let op:_ Er worden maximaal 50 resultaten getoond per request.
 ## Request
 
 |**URL**          |http://www.uitzendbureau.nl/api/applications
-|**HTTP-methode** |POST
+|**HTTP-methode** |POST (application/x-www-form-urlencoded)
 |**Limiet**       |Maximaal 50 resultaten per request
 
 ## Parameters

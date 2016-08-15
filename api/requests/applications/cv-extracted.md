@@ -22,7 +22,7 @@ cv&#39;s die voor 25 mei 2012 bij een profiel van werkzoekenden zijn gezet, en l
 ## Request
 
 |**URL**          |http://www.uitzendbureau.nl/api/application/cv/extracted
-|**HTTP-methode** |POST
+|**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters
 
@@ -33,7 +33,7 @@ cv&#39;s die voor 25 mei 2012 bij een profiel van werkzoekenden zijn gezet, en l
 
 ## Response
 
-De gegevens worden aangeboden in JSON-formaat.
+De response wordt aangeboden in JSON-formaat.
 
 ## Velden
 
