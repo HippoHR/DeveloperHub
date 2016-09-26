@@ -1,5 +1,5 @@
 {
   "repository.callsign": "FORDEVELOPERS",
-  "phabricator.uri": "http://phabricator.uzbdev.nl",
+  "phabricator.uri": "http://phabricator.hippo.farm",
   "arc.land.onto.default": "gh-pages"
 }
