@@ -10,9 +10,9 @@ Stap 2: Uitleg XML-schema &middot;
 
 # Uitleg XML-schema
 
-Om te beginnen kun je een [voorbeeld](http://www.uitzendbureau.nl/xml/job-1.0-example1.xml) downloaden. Hopelijk wordt het snel duidelijk waar je welke gegevens
-moet invullen. Toch gaan we uitgebreid elk element bespreken en uitleggen hoe je het hoort te gebruiken. Je kunt ook altijd het
-[XML-schema (XSD)](http://www.uitzendbureau.nl/xml/job-1.0.xsd) downloaden.
+Om te beginnen kun je een [voorbeeld](https://www.uitzendbureau.nl/xml/job-1.0-example1.xml) downloaden. Hopelijk wordt het snel duidelijk waar je welke
+gegevens moet invullen. Toch gaan we uitgebreid elk element bespreken en uitleggen hoe je het hoort te gebruiken. Je kunt ook altijd het
+[XML-schema (XSD)](https://www.uitzendbureau.nl/xml/job-1.0.xsd) downloaden.
 
 Met PHP, Java of een andere programmeertaal is het mogelijk om een XML-document te genereren. Bekijk eens het
 [PHP-voorbeeld](/jobs-xml/doc/examples.html).
@@ -176,7 +176,7 @@ De link naar de vacature op de website van het uitzendbureau.
 {% highlight xml %}
 <jobUrl>
   <![CDATA[
-    http://www.mijnuitzendbureau.nl/vacature/6489-automonteur
+    https://www.mijnuitzendbureau.nl/vacature/6489-automonteur
   ]]>
 </jobUrl>
 {% endhighlight %}
@@ -399,7 +399,7 @@ Gegevens over de persoon waarmee contact kan worden opgenomen over de vacature.
   </contactEmail>
   <contactUrl>
     <![CDATA[
-      http://www.mijnuitzendbureau.nl/werknemers/jan.janssen
+      https://www.mijnuitzendbureau.nl/werknemers/jan.janssen
     ]]>
   </contactUrl>
 </jobContact>

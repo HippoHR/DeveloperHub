@@ -3,7 +3,7 @@ describe('spec/javascripts/search', function() {
 
   // Object containing all parameters for the url
   var params = {};
-  params.url = 'http://www.uitzendbureau.nl/tools/zoekwidget';
+  params.url = 'https://www.uitzendbureau.nl/tools/zoekwidget';
   params.orientation = 'horizontal';
 
   var uriWithParams = createUri(params);
@@ -78,7 +78,7 @@ describe('spec/javascripts/search', function() {
     it('should be able to get the correct script URL', function() {
       searchWidget.orientation = params.orientation;
       var script = searchWidget._getScriptUrl();
-      expect(script).toEqual('http://www.uitzendbureau.nl/tools/zoekwidget?orientation=horizontal');
+      expect(script).toEqual('https://www.uitzendbureau.nl/tools/zoekwidget?orientation=horizontal');
     });
   });
 

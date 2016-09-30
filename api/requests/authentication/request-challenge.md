@@ -12,7 +12,7 @@ Vraag een challenge aan, waarmee een response gegenereerd kan worden. Dit wordt 
 
 ## Request
 
-|**URL**          |http://www.uitzendbureau.nl/api/authentication/request-challenge
+|**URL**          |https://www.uitzendbureau.nl/api/authentication/request-challenge
 |**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters

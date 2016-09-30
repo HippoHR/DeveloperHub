@@ -57,7 +57,7 @@
     this.authKey = authKey;
     this.sessionId;
     this.sessionExpireDate;
-    this.rootUrl = 'http://www.uitzendbureau.nl/api';
+    this.rootUrl = 'https://www.uitzendbureau.nl/api';
   };
 
   // 20 minutes

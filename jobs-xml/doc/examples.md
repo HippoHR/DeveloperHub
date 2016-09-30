@@ -7,9 +7,9 @@
 
 ## Hulpmiddelen
 
-|[XML-voorbeeld](http://www.uitzendbureau.nl/xml/job-1.0-example1.xml)
-|[XML-schema (XSD)](http://www.uitzendbureau.nl/xml/job-1.0.xsd)
-|[Leeg XML-bestand](http://www.uitzendbureau.nl/xml/job-1.0.xml)
+|[XML-voorbeeld](https://www.uitzendbureau.nl/xml/job-1.0-example1.xml)
+|[XML-schema (XSD)](https://www.uitzendbureau.nl/xml/job-1.0.xsd)
+|[Leeg XML-bestand](https://www.uitzendbureau.nl/xml/job-1.0.xml)
 
 ## PHP-voorbeeld
 

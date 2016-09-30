@@ -21,7 +21,7 @@ cv&#39;s die voor 25 mei 2012 bij een profiel van werkzoekenden zijn gezet, en l
 
 ## Request
 
-|**URL**          |http://www.uitzendbureau.nl/api/application/cv/extracted
+|**URL**          |https://www.uitzendbureau.nl/api/application/cv/extracted
 |**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters
@@ -154,10 +154,10 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
 
                 <ul>
                     <li>
-                        Je (proef)abonnement is be&euml;indigd. <a href="http://uitzendbureau.nl/login/mijn-account">Bekijk je abonnement</a> (login nodig)
+                        Je (proef)abonnement is be&euml;indigd. <a href="https://www.uitzendbureau.nl/login/mijn-account">Bekijk je abonnement</a> (login nodig)
                     </li>
                     <li>
-                        Je facturen zijn niet voldaan. <a href="http://uitzendbureau.nl/login/mijn-account/facturen">Bekijk je facturen</a> (login nodig)
+                        Je facturen zijn niet voldaan. <a href="https://www.uitzendbureau.nl/login/mijn-account/facturen">Bekijk je facturen</a> (login nodig)
                     </li>
                 </ul>
             </td>

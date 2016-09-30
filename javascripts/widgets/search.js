@@ -77,5 +77,5 @@ SearchWidgetForm.prototype.showTheExample = function() {
  * @returns {String} The url of the search widget script
  */
 SearchWidgetForm.prototype._getScriptUrl = function() {
-  return 'http://www.uitzendbureau.nl/tools/zoekwidget?' + URI.buildQueryParameter('orientation', this.orientation);
+  return 'https://www.uitzendbureau.nl/tools/zoekwidget?' + URI.buildQueryParameter('orientation', this.orientation);
 };

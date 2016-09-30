@@ -9,7 +9,7 @@ Download een cv, dat is meegestuurd bij een sollicitatie.
 
 ## Request
 
-|**URL**          |http://www.uitzendbureau.nl/api/application/cv
+|**URL**          |https://www.uitzendbureau.nl/api/application/cv
 |**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters
@@ -70,10 +70,10 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                 Je kunt deze sollicitaties niet bekijken. Dit kan enkele oorzaken hebben:
                 <ul>
                     <li>
-                        Je (proef)abonnement is be&euml;indigd. <a href="http://uitzendbureau.nl/login/mijn-account">Bekijk je abonnement</a> (login nodig).
+                        Je (proef)abonnement is be&euml;indigd. <a href="https://uitzendbureau.nl/login/mijn-account">Bekijk je abonnement</a> (login nodig).
                     </li>
                     <li>
-                        Je facturen zijn niet voldaan. <a href="http://uitzendbureau.nl/login/mijn-account/facturen">Bekijk je facturen</a> (login nodig).
+                        Je facturen zijn niet voldaan. <a href="https://uitzendbureau.nl/login/mijn-account/facturen">Bekijk je facturen</a> (login nodig).
                     </li>
                 </ul>
             </td>

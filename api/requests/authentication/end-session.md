@@ -9,7 +9,7 @@ Stop een actieve sessie.
 
 ## Request
 
-|**URL**          |http://www.uitzendbureau.nl/api/authentication/end-session
+|**URL**          |https://www.uitzendbureau.nl/api/authentication/end-session
 |**HTTP-methode** |POST (application/x-www-form-urlencoded)
 
 ## Parameters

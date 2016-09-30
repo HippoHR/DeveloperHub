@@ -7,7 +7,7 @@
 
 ## Algemene informatie
 
-De API van Uitzendbureau.nl is bereikbaar vanaf de volgende root-url: http://www.uitzendbureau.nl/api
+De API van Uitzendbureau.nl is bereikbaar vanaf de volgende root-url: https://www.uitzendbureau.nl/api
 
 Er wordt een limiet gehanteerd van 1.000 requests per lopende dag. Dat betekent dat er tussen nu en gisteren om dezelfde tijd maximaal 1.000 requests
 uitgevoerd mogen worden. Indien deze limiet wordt overschreden, dan wordt er een foutmelding getoond. Er worden dus geen kosten in rekening gebracht.

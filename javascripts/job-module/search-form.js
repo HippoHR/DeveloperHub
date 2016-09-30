@@ -150,7 +150,7 @@ SearchForm.prototype.setScriptVariables = function() {
  * @returns {String} The url of the search form script
  */
 SearchForm.prototype.getScriptUrl = function() {
-  return 'http://helios.uitzendbureau.nl/public/search-form/search-form.js';
+  return 'https://helios.uitzendbureau.nl/public/search-form/search-form.js';
 };
 
 /**

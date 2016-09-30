@@ -19,7 +19,7 @@ describe('spec/javascripts/job', function() {
   // Create a mock uri object and give it to a new jobWidget
   var uriWithParams = createUri(params),
     jobWidget = new JobWidgetForm(uriWithParams),
-    scriptUrl = 'http://www.uitzendbureau.nl/tools/vacaturewidget?' + URI.buildQuery(params);
+    scriptUrl = 'https://www.uitzendbureau.nl/tools/vacaturewidget?' + URI.buildQuery(params);
 
   beforeEach(function() {
     // Prepare the document with a test container

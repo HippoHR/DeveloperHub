@@ -178,5 +178,5 @@ JobWidgetForm.prototype._getScriptUrl = function() {
     w: this.width
   };
 
-  return 'http://www.uitzendbureau.nl/tools/vacaturewidget?' + URI.buildQuery(params);
+  return 'https://www.uitzendbureau.nl/tools/vacaturewidget?' + URI.buildQuery(params);
 };

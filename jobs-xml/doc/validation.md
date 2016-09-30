@@ -10,7 +10,7 @@ Stap 3: Validatie &middot;
 
 # Validatietool
 
-Hier kun je controleren of jouw XML-feed conform ons [XML-schema](http://www.uitzendbureau.nl/xml/job-1.0.xsd) is opgesteld. De XML dient op een publieke URL
+Hier kun je controleren of jouw XML-feed conform ons [XML-schema](https://www.uitzendbureau.nl/xml/job-1.0.xsd) is opgesteld. De XML dient op een publieke URL
 beschikbaar te zijn.
 
 Indien er [authorisatie](/jobs-xml/doc/auth.html) nodig is, dan kun je de **volledige waarde van de authorisatieheader** invullen bij `authorisatie`, zoals

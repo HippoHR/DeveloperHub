@@ -115,7 +115,7 @@ describe('spec/javascripts/search-form', function() {
   });
 
   it('should return the script url', function() {
-    expect(searchForm.getScriptUrl()).toEqual('http://helios.uitzendbureau.nl/public/search-form/search-form.js');
+    expect(searchForm.getScriptUrl()).toEqual('https://helios.uitzendbureau.nl/public/search-form/search-form.js');
   });
 
   it('should say that the design is default', function() {
