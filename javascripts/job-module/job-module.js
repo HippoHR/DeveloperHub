@@ -21,6 +21,7 @@ var JobModuleForm = function(URI) {
     textcolor: '333333',
     footercolor: '3A9615',
     fontsize: '14',
+    'results-per-page': '15',
     fonttype: 'Helvetica',
     hidedescription: 'true',
     hideplacetime: 'true',

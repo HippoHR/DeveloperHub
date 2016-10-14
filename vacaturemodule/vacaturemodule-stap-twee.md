@@ -87,6 +87,10 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
   <h3> Vacatureoverzicht </h3>
   <div class="col-sm-offset-1">
     <div class="form-group">
+      <label for="results-per-page" class="control-label col-sm-3">Vacatures per pagina</label>
+      <div class="col-sm-3">
+        <input id="results-per-page" type="number" name="results-per-page" min="5" max="20" class="form-control" />
+      </div>
       <div class="col-sm-9 checkbox">
         <label class="control-label">
           <input id="hidedescription" type="checkbox" name="description" value="true"> Een preview van de vacaturetekst is zichtbaar in het vacatureoverzicht
