@@ -196,8 +196,82 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
         </div>
       </div>
     </div>
-    <div class="col-sm-offset-1 col-sm-6 noPaddingLeft">
-      <div class="help-block"> Het instellen van de taal heeft geen invloed op de vacatureteksten. Deze worden getoond zoals ze op Uitzendbureau.nl staan.</div>
+    <div class="col-sm-offset-1">
+      <div class="form-group">
+        <div class="help-block col-sm-6 noPaddingLeft">
+          Het instellen van de taal heeft geen invloed op de vacatureteksten. Deze worden getoond zoals ze op Uitzendbureau.nl staan.
+        </div>
+      </div>
+    </div>
+
+
+    <h3 class="margin-top"> Filter vacatures </h3>
+    <div class="col-sm-offset-1">
+      <div class="form-group">
+        <label class="control-label col-sm-12">Wil je een selectie van de vacatures tonen in de vacaturemodule?</label>
+        <div class="radio col-sm-3">
+          <label><input type="radio" id="radioyes" name="optradio" value='true'>Ja, filter vacatures op:</label>
+        </div>
+        <select class="col-sm-3" multiple="multiple" id="agencyfilter" name="filter" form="designform">
+          <optgroup label="Vestiging">
+            <option value="" disabled>Wordt geladen...</option>
+          </optgroup>
+          <optgroup label="Opleidingsniveau">
+            <option value="education-Basisonderwijs">Basisonderwijs</option>
+            <option value="education-Middelbare+school">Middelbare school</option>
+            <option value="education-LBO">LBO</option>
+            <option value="education-MBO">MBO</option>
+            <option value="education-HBO">HBO</option>
+            <option value="education-WO">WO</option>
+            <option value="education-Overig">Overig</option>
+          </optgroup>
+          <optgroup label="Categorie">
+            <option value="category-Administratief">Administratief</option>
+            <option value="category-Agrarisch">Agrarisch</option>
+            <option value="category-Bouw">Bouw</option>
+            <option value="category-Callcenter">Callcenter</option>
+            <option value="category-Commercieel">Commercieel</option>
+            <option value="category-Detailhandel">Detailhandel</option>
+            <option value="category-Financieel">Financieel</option>
+            <option value="category-Horeca">Horeca</option>
+            <option value="category-ICT">ICT</option>
+            <option value="category-Juridisch">Juridisch</option>
+            <option value="category-Logistiek">Logistiek</option>
+            <option value="category-Onderwijs">Onderwijs</option>
+            <option value="category-P&O">P&O</option>
+            <option value="category-Productie">Productie</option>
+            <option value="category-Schoonmaak">Schoonmaak</option>
+            <option value="category-Secretarieel">Secretarieel</option>
+            <option value="category-Technisch">Technisch</option>
+            <option value="category-Zorg">Zorg</option>
+            <option value="category-Overig">Overig</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="radio col-sm-6">
+          <label><input type="radio" name="optradio" id="radiono" value='false'>Nee, toon alle vacatures</label>
+        </div>
+      </div>
+    </div>
+    <h3> Gebruiker filters </h3>
+    <div class="col-sm-offset-1" style="margin-top:20px;">
+      <div class="form-group">
+        <label class="control-label col-sm-12">Wil je dat bezoekers de vacatures op je website kunnen filteren?</label>
+        <div class="radio col-sm-3">
+          <label><input type="radio" id="userradioyes" name="useroptradio" value='true'>Ja, Bezoekers mogen filteren op:</label>
+        </div>
+        <select class="col-sm-3" multiple="multiple" id="userfilter" name="userfilter" form="designform">
+          <option value="Categorie">Categorie</option>
+          <option value="Opleidingsniveau">Opleidingsniveau</option>
+          <option value="Vestiging">Vestiging</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="radio col-sm-6">
+          <label><input type="radio" name="useroptradio" id="userradiono" value='false'>Nee, voeg geen filter functionaliteit toe</label>
+        </div>
+      </div>
     </div>
   </div>
   <br>
@@ -222,6 +296,7 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
 <script src="/javascripts/external/hex_sha1.js"></script>
 <script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
 <script src="/javascripts/widgets/recruiter.js"></script>
+<script src="/javascripts/widgets/branch.js"></script>
 <script src="/javascripts/job-module/job-module.js"></script>
 <script src="/javascripts/external/jscolor/jscolor.js"></script>
 <script src="/javascripts/job-module/job-module-controller.js"></script>

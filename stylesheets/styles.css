@@ -801,6 +801,10 @@ a.label-info:focus {
   min-height: 800px;
 }
 
+.radio {
+  padding: 0;
+}
+
 .noPaddingLeft {
   padding-left: 0;
 }

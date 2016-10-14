@@ -17,6 +17,15 @@
   };
 
   /**
+   * Method to retrieve branches from the API
+   * @param {int} recruiter Gives the RecruiterId
+   * @param {Function} done Callback for when the request is finished. Receives the branches as first parameter
+   */
+  UitzendbureauNLAPI.prototype.getBranches = function(recruiter, done) {
+    this.connector.get('/branches?rid=' + recruiter, done);
+  };
+
+  /**
    * Validates the jobs xml through the api
    * @param {string} url The url that contains the XML-feed to validate
    * @param {string} auth The optional authorization header that should be used to access the XML-feed
@@ -115,11 +124,11 @@
 
         var response = hex_sha1(challenge.challenge + self.authKey).toLowerCase();
         self.authenticate(response, function() {
-          self.performRequest.apply(self, args);//method, url, options, done
+          self.performRequest.apply(self, args); // method, url, options, done
         });
       });
     } else {
-      this.performRequest.apply(this, args);//method, url, options, done
+      this.performRequest.apply(this, args); // method, url, options, done
     }
   };
 
@@ -160,7 +169,7 @@
       if(method === 'GET') {
         var query = url.indexOf('?') >= 0 ? url.substring(url.indexOf('?')) : '';
         if(!('sessionId' in URI.parseQuery(query))) {
-          url += ( url.indexOf('?') >= 0 ? '&' : '?' ) + 'sessionId=' + this.sessionId;
+          url += (url.indexOf('?') >= 0 ? '&' : '?') + 'sessionId=' + this.sessionId;
         }
       } else {
         if(!('sessionId' in options)) {
@@ -200,7 +209,7 @@
   UitzendbureauNLAPIConnector.prototype._isValidJSON = function(str) {
     try {
         JSON.parse(str);
-    } catch (e) {
+    } catch(e) {
         return false;
     }
     return true;
@@ -209,11 +218,10 @@
   window.UitzendbureauNLAPI = UitzendbureauNLAPI;
 })(URI);
 
-
 var XHRCORS = (function() {
-  if ('withCredentials' in new XMLHttpRequest()) {
+  if('withCredentials' in new XMLHttpRequest()) {
     return XMLHttpRequest;
-  } else if (typeof XDomainRequest !== 'undefined') {
+  } else if(typeof XDomainRequest !== 'undefined') {
     return XDomainRequest;
   }
 })();

@@ -6,6 +6,7 @@
 var JobModuleForm = function(URI) {
   this.URI = URI;
   this.recruiter = '';
+  this.branches = [];
   this.checkBoxes = [
     'hidedescription',
     'hideplacetime',
@@ -43,6 +44,20 @@ var JobModuleForm = function(URI) {
     loadingcolor: '11BAF2',
     loadingcolorbackground: 'B5E9F7'
   };
+  this.filter = {
+    radioagency: false,
+    education: [],
+    branch: [],
+    category: []
+  };
+
+  this.userfilter = {
+    radiouser: false,
+    education: false,
+    branch: false,
+    category: false
+  };
+
   this.location = document.location.pathname;
   this.design = {};
   this.formSubmitted = false;
@@ -74,6 +89,7 @@ JobModuleForm.prototype.prepareStepOne = function() {
  * Function for preparing step two of the job-module.
  */
 JobModuleForm.prototype.prepareStepTwo = function() {
+  this.prepareBranches();
   var self = this;
   // Attach event to all the informationform checkboxes for when they get clicked.
   for(var i = 0; i < this.checkBoxes.length; i++) {
@@ -89,6 +105,8 @@ JobModuleForm.prototype.prepareStepTwo = function() {
   this.attachEventToElement('default', function(e) {
     self.setToDefault(e);
   }, 'click');
+  this.makeFilter();
+  this.checkFilterRadioButtons();
   // Attach event when the link "Geavanceerde instellingen" gets clicked.
   this.attachEventToElement('advancedOptionsLink', this.advancedOptions, 'click');
   // Attach event when the button "Ga naar volgende stap" gets clicked.
@@ -158,6 +176,55 @@ JobModuleForm.prototype.loadFromUrl = function() {
     this.design.hidedescription = params.description || 'false';
     this.design.hideplacetime = params.placetime || 'false';
     this.design.searchform = params.searchform || 'false';
+    this.filter.radioagency = params.optradio || false;
+    this.userfilter.radiouser = params.useroptradio || false;
+  }
+
+  if(params.filter){
+    this.loadFilterFromUrl(params.filter);
+  }
+  if(params.userfilter){
+    this.loadUserFilterFromUrl(params.userfilter);
+  }
+};
+
+/**
+ * Loads the filters from the url with for loop and adds them to the select box
+ * @param {Array} filters Array of the selected filters
+ */
+JobModuleForm.prototype.loadFilterFromUrl = function(filters) {
+  var self = this;
+  if(typeof filters === 'string') {
+    filters = filters.split();
+  }
+  for(var i = 0; i < filters.length; i++) {
+    if(filters[i].indexOf('education') === 0) {
+      self.filter.education.push(filters[i].replace('education-', ''));
+    } else if(filters[i].indexOf('category') === 0) {
+      self.filter.category.push(filters[i].replace('category-', ''));
+    } else {
+      self.filter.branch.push(filters[i]);
+    }
+  }
+};
+
+/**
+ * Loads the userfilters from the url with for loop and adds them to the select box
+ * @param {Array} filters Array of the selected filters
+ */
+JobModuleForm.prototype.loadUserFilterFromUrl = function(filters) {
+  var self = this;
+  if(typeof filters === 'string') {
+    filters = filters.split();
+  }
+  for(var i = 0; i < filters.length; i++) {
+    if(filters[i] === 'Opleidingsniveau') {
+      self.userfilter.education = true;
+    } else if(filters[i] === 'Categorie') {
+      self.userfilter.category = true;
+    } else if(filters[i] === 'Vestiging') {
+      self.userfilter.branch = true;
+    }
   }
 };
 
@@ -169,6 +236,17 @@ JobModuleForm.prototype.prepareRecruiters = function() {
   Recruiter.getAll(function(recruiters) {
     self.showRecruiterList(recruiters);
   });
+};
+
+/**
+ * Prepare the branches part of the form. Loads a list of branches from the given recruiter to show.
+ */
+JobModuleForm.prototype.prepareBranches = function() {
+  var self = this;
+  Branches.getAll(this.recruiter, function(branches) {
+    self.branches = branches;
+    self.fillFilter(branches);
+  })
 };
 
 /**
@@ -234,6 +312,31 @@ JobModuleForm.prototype.fillTheFormStepTwo = function() {
       document.getElementById(element).value = this.design[element];
     }
   }
+  var myOpts = document.getElementById('agencyfilter').options;
+  for(var j = 0; j < myOpts.length; j++) {
+    for(var k = 0; k < this.filter.education.length; k++) {
+      if(myOpts[j].value.replace('education-', '') === decodeURI(this.filter.education[k])) {
+        $('#agencyfilter option').eq(j).prop('selected', true);
+      }
+    }
+    for(var l = 0; l < this.filter.category.length; l++) {
+      if(myOpts[j].value.replace('category-', '') === this.filter.category[l]) {
+        $('#agencyfilter option').eq(j).prop('selected', true);
+      }
+    }
+  }
+  $('#agencyfilter')[0].sumo.reload();
+  if(this.userfilter.category){
+    $('#userfilter option').eq(0).prop('selected', true);
+  }
+  if(this.userfilter.education){
+    $('#userfilter option').eq(1).prop('selected', true);
+  }
+  if(this.userfilter.branch) {
+    $('#userfilter option').eq(2).prop('selected', true);
+  }
+  $('#userfilter')[0].sumo.reload();
+
   // When designform has been submitted once we keep showing the design form.
   if(this.formSubmitted) {
     this.showDesignChoices();
@@ -267,13 +370,15 @@ JobModuleForm.prototype.showTheExample = function() {
   document.body.appendChild(scriptTag);
 };
 
-  /**
-   * Method to build the script url from the form data.
-   * @returns {String} The url of the job widget script.
-   */
-  JobModuleForm.prototype._getTheCode = function() {
-    var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' ' + this.getDesignChoices() + '>' + '</div>' + '\n'
-      + '\n' +
+/**
+ *  Method to build the script url from the form data.
+ * @returns {String} The url of the job widget script.
+ */
+JobModuleForm.prototype._getTheCode = function() {
+  var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' data-language="nl-NL" ' + this.getDesignChoices() +
+    this.getFilterChoice() + this.getUserFilterChoice() + '>' +
+    '</div>' + '\n' +
+    '\n' +
     '<script>' + '\n' +
     '  (function(d, s, id) {' + '\n' +
     '    var js, fjs = d.getElementsByTagName(s)[0];' + '\n' +
@@ -283,8 +388,40 @@ JobModuleForm.prototype.showTheExample = function() {
     '    fjs.parentNode.insertBefore(js, fjs);' + '\n' +
     '  }(document, \'script\', \'helios-joboverview\'));' + '\n' +
     '</script>';
-    return code;
-  };
+  return code;
+};
+
+/**
+ * Function for creating a string with all the filter choices.
+ * @returns {String} with the user filter choices.
+ */
+JobModuleForm.prototype.getFilterChoice = function() {
+  var filter = '';
+  if(this.filter.branch[0]) {
+    filter = 'data-filter-branch' + '="' + this.filter.branch + '" ';
+  }
+  if(this.filter.education[0]) {
+    filter += 'data-filter-education' + '="' + this.filter.education + '" ';
+  }
+  if(this.filter.category[0]) {
+    filter += 'data-filter-category' + '="' + this.filter.category + '" ';
+  }
+  return filter;
+};
+
+/**
+ * Function for creating a string with all the user filter choices.
+ * @returns {String} with the user filter choices.
+ */
+JobModuleForm.prototype.getUserFilterChoice = function() {
+  var userfilters = 'data-filter-user-education' + '="' + this.userfilter.education + '" ';
+  userfilters += ' data-filter-user-category' + '="' + this.userfilter.category + '" ';
+  userfilters += ' data-filter-user-branch' + '="' + this.userfilter.branch + '" ';
+  if(this.userfilter.education || this.userfilter.category || this.userfilter.branch){
+    userfilters += ' data-filter' + '="' + true + '" ';
+  }
+  return userfilters;
+};
 
 /**
  * Function for creating a string with all the design choices.
@@ -352,6 +489,12 @@ JobModuleForm.prototype.setToDefault = function(e) {
     designform.action = '#designform';
     designform.submit();
   }
+  $('#agencyfilter option').prop('selected', false);
+  $('#agencyfilter')[0].sumo.reload();
+  $('#radiono').prop('checked', true);
+  $('#userfilter option').prop('selected', false);
+  $('#userfilter')[0].sumo.reload();
+  $('#userradiono').prop('checked', true);
   this.disableEnableFields(false);
 };
 
@@ -439,3 +582,83 @@ JobModuleForm.prototype.submitCheckBoxes = function() {
 JobModuleForm.prototype.changeLocation = function(url) {
   document.location = url;
 };
+
+/**
+ * Function for making the filter disabled and enabled and add events
+ */
+JobModuleForm.prototype.makeFilter = function() {
+  $('#agencyfilter').change(function(e) {
+    e.stopPropagation();
+  });
+  $('#agencyfilter').SumoSelect({placeholder: 'Selecteer filters'});
+
+  var UPDATE_FILTER = function() {
+    if($('#radiono').is(':checked')) {
+      $('#radioyes').prop('checked', true);
+    }
+  };
+
+  var disablefilterSelection = function() {
+    $('#agencyfilter option').prop('selected', false);
+    $('#agencyfilter')[0].sumo.reload();
+    $('#radiono').prop('checked', true);
+  }
+
+  $('#agencyfilter').click(UPDATE_FILTER);
+  $('#radiono').click(disablefilterSelection);
+
+  $('#userfilter').SumoSelect({placeholder: 'Selecteer filters'});
+  var UPDATE_USER_FILTERS = function() {
+    if($('#userradiono').is(':checked')) {
+      $('#userradioyes').prop('checked', true);
+    }
+  };
+
+  var disableuserfilterSelection = function() {
+    $('#userfilter option').prop('selected', false);
+    $('#userfilter')[0].sumo.reload();
+    $('#userradiono').prop('checked', true);
+  };
+
+  $('#userfilter').click(UPDATE_USER_FILTERS);
+  $('#userradiono').click(disableuserfilterSelection);
+
+  if(this.userfilter.radiouser === 'true') {
+    $('#userradioyes').prop('checked', true);
+  } else {
+    $('#userfilter option').prop('selected', false);
+    $('#userfilter')[0].sumo.reload();
+    $('#userradiono').prop('checked', true);
+  }
+};
+
+/**
+ * Function for filling the filter dropdown menu with branches
+ */
+JobModuleForm.prototype.fillFilter = function(branches) {
+  var self = this;
+  for(var i = 0; i < branches.length; i++) {
+    $('#agencyfilter')[0].sumo.add(branches[i].id, branches[i].name, 0);
+    for(var j = 0; j < self.filter.branch.length; j++) {
+      if(branches[i].id === self.filter.branch[j]) {
+        $('#agencyfilter option').eq(0).prop('selected', true);
+        $('#agencyfilter')[0].sumo.reload();
+      }
+    }
+  }
+  $('#agencyfilter')[0].sumo.remove(branches.length);
+  $('#agencyfilter')[0].sumo.reload();
+};
+
+/**
+ * Function for checking the radiobutton state and filling it
+ */
+JobModuleForm.prototype.checkFilterRadioButtons = function() {
+  if(this.filter.radioagency === 'true') {
+    $('#radioyes').prop('checked', true);
+  } else {
+    $('#agencyfilter option').prop('selected', false);
+    $('#agencyfilter')[0].sumo.reload();
+    $('#radiono').prop('checked', true);
+  }
+}
