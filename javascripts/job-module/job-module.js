@@ -375,7 +375,7 @@ JobModuleForm.prototype.showTheExample = function() {
  * @returns {String} The url of the job widget script.
  */
 JobModuleForm.prototype._getTheCode = function() {
-  var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' data-language="' + this.language + '"' +
+  var code =  '<div class="helios-jobframe" data-source="uzbnl" data-recruiter=' + this.recruiter + ' ' +
     this.getDesignChoices() + this.getFilterChoice() + this.getUserFilterChoice() + '>' +
     '</div>' + '\n' +
     '\n' +
