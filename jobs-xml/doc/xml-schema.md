@@ -402,8 +402,15 @@ Gegevens over de persoon waarmee contact kan worden opgenomen over de vacature.
       https://www.mijnuitzendbureau.nl/werknemers/jan.janssen
     ]]>
   </contactUrl>
+  <mandatoryMotivation>
+    <![CDATA[
+      true
+    ]]>
+  </mandatoryMotivation>
 </jobContact>
 {% endhighlight %}
+
+Het veld `mandatoryMotivation` geeft aan of gebruikers verplicht een motivatietekst moeten invullen bij een sollicitatie.
 
 ### jobBranch
 
