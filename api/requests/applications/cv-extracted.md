@@ -216,24 +216,24 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
 ## Voorbeeldresponse
 
     {
-        "cvHash": "maja-de-bij-182a2bf",
-        "applicationId": 123,
+        "cvHash": "bob-de-bouwer-6fbd8f8e-dc50-4147-8da3-ac94eececc81",
+        "applicationId": 1636190,
         "cv":
         {
-            "firstName": "Maja",
-            "initials": "M.",
+            "firstName": "Bob",
+            "initials": "B.",
             "lastNamePrefix": "de",
-            "lastName": "Bij",
-            "title": "ir.",
-            "dateOfBirth": "1989-06-27",
-            "placeOfBirth": "Bijenstad",
-            "maritalStatus": "Ongehuwd",
+            "lastName": "Bouwer",
+            "title": "B Eng",
+            "dateOfBirth": "1977-01-30",
+            "placeOfBirth": "Bobstad",
+            "maritalStatus": "Gehuwd",
             "nationality": "Nederlandse",
-            "gender": "F",
-            "street": "Bijenstraat",
+            "gender": "M",
+            "street": "Snoeistraat",
             "streetNumber": "1",
-            "zipcode": "1234 AB",
-            "place": "Bijenstad",
+            "zipcode": "1234 BB",
+            "place": "Zonnebloemvalei",
             "country": "Nederland",
             "phones":
             [
@@ -249,65 +249,68 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
             ],
             "emails":
             [
-                "majadebij@uitzendbureau.nl"
+                "bobdebouwer@uitzendbureau.nl"
             ],
             "availability": "2012-05-24",
             "driverLicences":
             [
                 "CAR",
-                "MOPED"
+                "MOPED",
+                "TRUCK",
+                "FORKLIFT",
+                "TRACTOR"
             ],
             "educations":
             [
                 {
-                    "education": "Werkbij-opleiding",
+                    "education": "Betontimmerman",
                     "level": "MBO",
                     "startDate": "1993",
                     "endDate": "1998",
-                    "school": "College De Werkbij",
+                    "school": "College De Gereedschapskist",
                     "graduated": true,
-                    "subjects": "scheikunde, natuurkunde, biologie",
+                    "subjects": "beton storten, timmeren",
                     "isHighestEducation": false
                 },
                 {
-                    "education": "Hogere bijenschool",
+                    "education": "Bouwkunde",
                     "level": "HBO",
                     "startDate": null,
                     "endDate": null,
-                    "school": "HBO De Honing in Bijenstad",
+                    "school": "HBO De Zaag in Houtdorp",
                     "graduated": false,
-                    "subjects": "wiskunde, scheikunde, natuurkunde, biologie",
+                    "subjects": "tekenen, bouwen, praten met werktuigen",
                     "isHighestEducation": true
                 },
                 {
-                    "education": "Cursus EHBO",
+                    "education": "VCA Certificaat",
                     "level": "Cursus",
                     "startDate": null,
                     "endDate": null,
-                    "school": "De Honing in Bijenstad",
+                    "school": "De Hamer in Houtdorp",
                     "graduated": true,
-                    "subjects": "verlenen eerste hulp",
+                    "subjects": "veiligheid, gezondheid, milieu (VGM) checklist aannemers",
                     "isHighestEducation": false
                 }
             ],
             "workExperiences":
             [
                 {
-                    "jobTitle": "Werkbij",
+                    "jobTitle": "Betontimmerman",
                     "startDate": "2004-08",
                     "endDate": "2008-1",
-                    "employer": "Bijenkolonie De Imker in Bijenstad",
-                    "description": "Verantwoordelijk voor het verzamelen van honing.",
-                    "quitReason": "Ontslagen vanwege Honingcrisis.",
+                    "employer": "Constructiebedrijf De Spijker",
+                    "description": "Maken van bekisting en storten van beton.",
+                    "quitReason": "Zelfstandig geworden.",
                     "isLastItem": false,
                     "isLastItemWithJobTitle": false
                 },
                 {
-                    "jobTitle": "Werkbij",
+                    "jobTitle": "Baas Constructiebedrijf De Balk",
                     "startDate": "2008-04",
                     "endDate": null,
-                    "employer": "Bijenkolonie Het Nest in Bijenstad",
-                    "description": "Directe ondersteuning van de koningin.",
+                    "employer": "Constructiebedrijf De Balk",
+                    "description": "Constructie van gebouwen met assistant Wendy en de machines.",
                     "quitReason": "",
                     "isLastItem": true,
                     "isLastItemWithJobTitle": true
@@ -336,14 +339,14 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
             ],
             "softSkills":
             [
-                "Zelfstandig",
-                "betrokken",
+                "Teamplayer",
+                "nauwkeurig",
                 "verantwoordelijk"
             ],
             "hobbies":
             [
-                "Zoemen",
-                "vliegen"
+                "Tuinieren",
+                "praten met mijn machines"
             ]
         }
     }

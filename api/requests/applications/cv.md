@@ -117,9 +117,9 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
 ## Voorbeeldresponse
 
     {
-        "cvHash": "dennis123-broe-7bc26",
-        "applicationId": 1636189,
-        "fileName": "dennis123-broe-7bc26.docx",
+        "cvHash": "bob-de-bouwer-6fbd8f8e-dc50-4147-8da3-ac94eececc81",
+        "applicationId": 1636190,
+        "fileName": "bob-de-bouwer-6fbd8f8e-dc50-4147-8da3-ac94eececc81.docx",
         "fileSize": 52286,
         "fileType": "docx",
         "file": "SGVsbG8gd29ybGQh"
