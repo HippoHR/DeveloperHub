@@ -7,7 +7,7 @@ describe('spec/javascripts/job', function() {
     s: 'vakken vullen',
     p: 'Amsterdam',
     rad: '50',
-    r: 'randstad',
+    rid: '1',
     l: '10',
     w: '550'
   };
@@ -34,7 +34,7 @@ describe('spec/javascripts/job', function() {
   describe('loadFromUrl', function() {
     it('should get all parameters from the url', function() {
       jobWidget.loadFromUrl();
-      expect(jobWidget.recruiter).toEqual(params.r);
+      expect(jobWidget.recruiter).toEqual(params.rid);
       expect(jobWidget.search).toEqual(params.s);
       expect(jobWidget.place).toEqual(params.p);
       expect(jobWidget.radius).toEqual(params.rad);

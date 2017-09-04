@@ -171,6 +171,8 @@ describe('spec/javascripts/job-module', function() {
     createInformationForm();
     testDiv.appendChild(form);
     var testDesign = createDesignChoiceForm();
+    jobModuleForm.makeFilter();
+
     testDesign.hidedescription.checked = false;
     testDesign.pagebuttontextcolorblack.checked = true;
     testDesign.fonttype.value = 'Arial';
@@ -276,6 +278,11 @@ describe('spec/javascripts/job-module', function() {
         testDiv.appendChild(testDesignForm[elementId]);
       }
     }
+
+    // Add the filter selectors to the form
+    testDiv.appendChild(createDOMElement('select', {id: 'agencyfilter'}));
+    testDiv.appendChild(createDOMElement('select', {id: 'userfilter'}));
+
     return testDesignForm;
   }
 });
