@@ -152,6 +152,8 @@
             // Hide the element.
             validationErrorsContainer.className = 'hidden';
         } else if(show) {
+            // Hide the validation success element.
+            document.getElementById('validation-success').className = 'hidden';
             // Show the element.
             validationErrorsContainer.className = '';
         }
