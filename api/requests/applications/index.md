@@ -32,6 +32,8 @@ De resultaten worden aangeboden in JSON-formaat, en gesorteerd op de datum van d
 |**id**               |Integer  |Nee           |Identifier van de sollicitatie. Iedere sollicitatie heeft een uniek id.
 |**applicationDate**  |Date     |Nee           |Datum en tijdstip van de sollicitatie. Wordt aangeboden in het formaat `YYYY-MM-DD HH:MM:SS`
 |**name**             |String   |Nee           |De naam van de sollicitant.
+|**firstName**        |String   |Ja***         |De voornaam van de sollicitant.
+|**lastName**         |String   |Ja***         |De achternaam van de sollicitant.
 |**phone**            |String   |Nee           |Telefoonnummer van de sollicitant.
 |**email**            |String   |Nee           |E-mailadres van de sollicitant.
 |**motivation**       |String   |Nee           |Motivatietekst, geschreven door de sollicitant bij de sollicitatie.
@@ -46,6 +48,8 @@ De resultaten worden aangeboden in JSON-formaat, en gesorteerd op de datum van d
 \* Indien er geen waarde bekend is, wordt een `null`-waarde geretourneerd.
 
 ** In zeer exclusieve gevallen kunnen deze waarden niet beschibaar zijn, waardoor de waarde `null` is.
+
+*** Bij oudere sollicitaties kan dit veld de volledige naam bevatten.
 
 ## Foutcodes
 
@@ -136,6 +140,8 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
             "id": 1636189,
             "applicationDate": "2017-08-17 11:31:50",
             "name": "Jan Jansen",
+            "firstName": "Jan",
+            "lastName": "Jansen",
             "phone": "06-12345678",
             "email": "sollicitant@hotmail.com",
             "motivation": "Ik heb 10 jaar ervaring als buschauffeur. (...)",
@@ -151,6 +157,8 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
             "id": 1636190,
             "applicationDate": "2017-08-17 11:31:51",
             "name": "Bob de Bouwer",
+            "firstName": "Bob",
+            "lastName": "de Bouwer",
             "phone": "06-12345678",
             "email": "bobdebouwer@uitzendbureau.nl",
             "motivation": "Ik heb 8 jaar ervaring als monteur. (...)",
