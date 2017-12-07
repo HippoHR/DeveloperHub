@@ -6,9 +6,9 @@
     "jasmine-core": "2.8.0",
     "karma": "1.7.1",
     "karma-coverage": "1.1.1",
-    "karma-jasmine": "1.1.0",
+    "karma-jasmine": "1.1.1",
     "karma-phantomjs-launcher": "1.0.4",
-    "karma-sonarqube-unit-reporter": "0.0.13",
-    "phantomjs-prebuilt": "2.1.15"
+    "karma-sonarqube-unit-reporter": "0.0.14",
+    "phantomjs-prebuilt": "2.1.16"
   }
 }
