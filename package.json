@@ -1,14 +1,14 @@
 {
   "devDependencies": {
-    "grunt": "1.0.2",
+    "grunt": "1.0.3",
     "grunt-karma": "2.0.0",
     "grunt-lcov-merge": "1.2.3",
     "jasmine-core": "3.1.0",
-    "karma": "2.0.0",
-    "karma-coverage": "1.1.1",
-    "karma-jasmine": "1.1.1",
+    "karma": "2.0.2",
+    "karma-coverage": "1.1.2",
+    "karma-jasmine": "1.1.2",
     "karma-phantomjs-launcher": "1.0.4",
-    "karma-sonarqube-unit-reporter": "0.0.15",
+    "karma-sonarqube-unit-reporter": "0.0.17",
     "phantomjs-prebuilt": "2.1.16"
   }
 }
