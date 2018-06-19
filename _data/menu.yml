@@ -62,3 +62,5 @@
       url: /widgets/vacaturewidget.html
     - text: De zoekwidget
       url: /widgets/zoekwidget.html
+- text: Bot
+  url: /bot/
