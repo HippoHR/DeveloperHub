@@ -37,7 +37,7 @@ if( !mysql_select_db( 'database', $link ) )
 }
 
 // Execute a query
-$query = 'SELECT id, titel, datum, beschrijving, plaats, provincie FROM vacatures';
+$query = 'SELECT id, titel, datum, beschrijving, plaats, provincie, postcode FROM vacatures';
 $rs = mysql_query( $query, $link );
 
 if( !$rs )
@@ -62,6 +62,7 @@ while( $row = mysql_fetch_array( $rs ) )
   $xml .= '  <jobLocation>' . EOL;
   $xml .= '    <locationPlace><![CDATA[' . $row[ 'plaats' ] . ']]></locationPlace>' . EOL;
   $xml .= '    <locationProvince><![CDATA[' . $row[ 'provincie' ] . ']]></locationProvince>' . EOL;
+  $xml .= '    <locationZipCode><![CDATA[' . $row[ 'postcode' ] . ']]></locationZipCode>' . EOL;
   $xml .= '  </jobLocation>' . EOL;
   $xml .= '</job>' . EOL;
 }
@@ -88,6 +89,7 @@ Dit genereert een XML-document met de volgende structuur:
     <jobLocation>
       <locationPlace><![CDATA[Eindhoven]]></locationPlace>
       <locationProvince><![CDATA[Noord-Brabant]]></locationProvince>
+      <locationZipCode>5611DE</locationZipCode>
     </jobLocation>
   </job>
   <job>
@@ -98,6 +100,7 @@ Dit genereert een XML-document met de volgende structuur:
     <jobLocation>
       <locationPlace><![CDATA[Groningen]]></locationPlace>
       <locationProvince><![CDATA[Groningen]]></locationProvince>
+      <locationZipCode>9711JB</locationZipCode>
     </jobLocation>
   </job>
   <!-- Etc. -->

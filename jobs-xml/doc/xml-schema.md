@@ -129,6 +129,18 @@ Een algemene beschrijving van de vacature. Informatie over bijv. de ervaring of 
 
 {% highlight xml %}
 <jobLocation>
+  <locationPlace></locationPlace>
+  <locationProvince></locationProvince>
+  <locationZipCode></locationZipCode>
+</jobLocation>
+{% endhighlight %}
+
+#### locationPlace <span class="label label-warning">verplicht</span>
+
+De standplaats van de vacature.
+
+{% highlight xml %}
+<jobLocation>
   <locationPlace>
     <![CDATA[
       Nijmegen
@@ -137,9 +149,35 @@ Een algemene beschrijving van de vacature. Informatie over bijv. de ervaring of 
 </jobLocation>
 {% endhighlight %}
 
-#### locationPlace <span class="label label-warning">verplicht</span>
+#### locationProvince
 
-De standplaats/werklocatie van de vacature.
+De provincie van de vacature.
+
+{% highlight xml %}
+<jobLocation>
+  <locationProvince>
+    <![CDATA[
+      Gelderland
+    ]]>
+  </locationProvince>
+</jobLocation>
+{% endhighlight %}
+
+#### locationZipCode
+
+**(Optioneel, maar zeer aanbevolen)**
+
+De postcode van de vacature.
+
+{% highlight xml %}
+<jobLocation>
+  <locationZipCode>
+    <![CDATA[
+      6538AB
+    ]]>
+  </locationZipCode>
+</jobLocation>
+{% endhighlight %}
 
 ### jobCategory
 
