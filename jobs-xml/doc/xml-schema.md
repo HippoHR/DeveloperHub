@@ -399,7 +399,7 @@ Algemene informatie over de werkgever.
 
 ### jobContact
 
-Gegevens over de persoon waarmee contact kan worden opgenomen over de vacature.
+Contactgegevens betreffende de vacature.
 
 {% highlight xml %}
 <jobContact>
@@ -440,6 +440,16 @@ Gegevens over de persoon waarmee contact kan worden opgenomen over de vacature.
       https://www.mijnuitzendbureau.nl/werknemers/jan.janssen
     ]]>
   </contactUrl>
+  <applicationUrl>
+    <![CDATA[
+      https://www.mijnuitzendbureau.nl/vacature/123-automonteur/solliciteren
+    ]]>
+  </applicationUrl>
+  <applicationUrlHotJob>
+    <![CDATA[
+      https://www.mijnuitzendbureau.nl/vacature/123-automonteur/solliciteren?topvacature=1
+    ]]>
+  </applicationUrlHotJob>
   <mandatoryMotivation>
     <![CDATA[
       true
@@ -447,6 +457,10 @@ Gegevens over de persoon waarmee contact kan worden opgenomen over de vacature.
   </mandatoryMotivation>
 </jobContact>
 {% endhighlight %}
+
+De velden `applicationUrl` en `applicationUrlHotJob` worden alleen gebruikt bij overeenstemming met de accountmanager van Uitzendbureau.nl. Standaard worden
+sollicitaties verzonden naar het e-mailadres in `contactEmail`. `applicationUrlHotJob` (indien beschikbaar) wordt alleen gebruikt bij sollicitaties op
+topvacatures.
 
 Het veld `mandatoryMotivation` geeft aan of gebruikers verplicht een motivatietekst moeten invullen bij een sollicitatie.
 
