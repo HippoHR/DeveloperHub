@@ -8,7 +8,7 @@
     "karma-coverage": "2.0.3",
     "karma-jasmine": "4.0.1",
     "karma-phantomjs-launcher": "1.0.4",
-    "karma-sonarqube-unit-reporter": "0.0.21",
+    "karma-sonarqube-unit-reporter": "0.0.23",
     "phantomjs-prebuilt": "2.1.16"
   }
 }
