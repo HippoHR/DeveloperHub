@@ -20,8 +20,7 @@ Het toevoegen van de vacaturemodule aan je website kost slechts **een paar minut
 Hulp nodig? Bel 085-4019579, wij bieden **kosteloos een helpende hand** bij de implementatie.
 
 Benieuwd hoe de vacaturemodule eruit ziet? Bekijk het resultaat bij
-<a href="http://flexchauffeurs.nl/vrachtwagenchauffeurs-vacatures/" target="_blank">Flexchauffeurs</a> en
-<a href="http://www.doenpersoneel.eu/vacatures.htm" target="_blank">DOEN! Personeel</a>.
+<a href="http://flexchauffeurs.nl/vrachtwagenchauffeurs-vacatures/" target="_blank">Flexchauffeurs</a>.
 
 [Maak nu je eigen vacaturemodule &raquo;](/vacaturemodule/vacaturemodule-stap-een.html)
 
