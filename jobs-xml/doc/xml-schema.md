@@ -233,7 +233,7 @@ Hieronder een voorbeeld van hoe het totaalplaatje eruit kan zien.
   <offerContract>
     <contractType>
       <![CDATA[
-        vast
+        vrijwilligerswerk
       ]]>
     </contractType>
     <contractHours>
@@ -290,7 +290,8 @@ Feitelijk aanbod van de vacature.
 
 #### contractType
 
-Soort dienstverband. Kies hierbij uit: `tijdelijk`, `vast`, `vakantiewerk` of `studenten`.
+Soort dienstverband. Kies hierbij uit de dienstverbanden op [deze pagina](https://www.uitzendbureau.nl/dienstverband){:target="_blank"}. Je kunt er ook
+meerdere gebruiken, gescheiden door komma's.
 
 #### contractHours
 
