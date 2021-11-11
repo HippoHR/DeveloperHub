@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [De vacaturemodule](/vacaturemodule/) &raquo; Het zoekformulier toevoegen
+[Developer Hub]({{ site.baseurl }}/) &raquo; [De vacaturemodule]({{ site.baseurl }}/vacaturemodule/) &raquo; Het zoekformulier toevoegen
 
 # Het zoekformulier
 
@@ -109,8 +109,8 @@ Voor hulp bij het toevoegen van het zoekformulier kun je bellen naar 085-4019579
   </div>
 </div>
 
-<script src="/javascripts/external/uri.js"></script>
-<script src="/javascripts/layout/output-buffer.js"></script>
-<script src="/javascripts/job-module/search-form.js"></script>
-<script src="/javascripts/job-module/search-form-controller.js"></script>
-<script src="/javascripts/external/jscolor/jscolor.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/uri.js"></script>
+<script src="{{ site.baseurl }}/javascripts/layout/output-buffer.js"></script>
+<script src="{{ site.baseurl }}/javascripts/job-module/search-form.js"></script>
+<script src="{{ site.baseurl }}/javascripts/job-module/search-form-controller.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/jscolor/jscolor.js"></script>

@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo; /applications
+[Developer Hub]({{ '/' | relative_url }}) &raquo; [API]({{ '/api' | relative_url }}) &raquo; [Documentatie]({{ '/api/doc.html' | relative_url }}) &raquo; [Requests]({{ '/api/requests' | relative_url }}) &raquo; /applications
 
 # /applications
 
@@ -37,7 +37,7 @@ De resultaten worden aangeboden in JSON-formaat, en gesorteerd op de datum van d
 |**phone**            |String   |Nee           |Telefoonnummer van de sollicitant.
 |**email**            |String   |Nee           |E-mailadres van de sollicitant.
 |**motivation**       |String   |Nee           |Motivatietekst, geschreven door de sollicitant bij de sollicitatie.
-|**cvHash**           |String   |Nee           |De cv-hash voor het bekijken van de cv van de kandidaat. De cv kan ook [via de API worden opgehaald](/api/requests/applications/cv.html).
+|**cvHash**           |String   |Nee           |De cv-hash voor het bekijken van de cv van de kandidaat. De cv kan ook [via de API worden opgehaald]({{ site.baseurl }}/api/requests/applications/cv.html).
 |**emailReceiver**    |String   |Nee           |Het e-mailadres van de intercedent of vestiging waarnaar de sollicitatie is verzonden.
 |**uzbJobId**         |Integer  |Nee           |Het unieke vacature id van de vacature waarop is gesolliciteerd.
 |**jobId**            |String   |Ja*           |Indien vacatures automatisch worden doorgeplaatst naar Uitzendbureau.nl (bijvoorbeeld via een XML-koppeling), dan is er ook een id beschibaar dat wordt gehanteerd door het uitzendbureau zelf. Dit id wordt hier getoond.
@@ -77,7 +77,7 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                 <strong>401</strong>
             </td>
             <td>
-                Je bent niet geauthenticeerd. Mogelijk is de sessie verlopen. Volg <a href="/api/auth.html">deze stappen</a> opnieuw, om jezelf in te loggen.
+                Je bent niet geauthenticeerd. Mogelijk is de sessie verlopen. Volg <a href="{{ site.baseurl }}/api/auth.html">deze stappen</a> opnieuw, om jezelf in te loggen.
             </td>
         </tr>
         <tr>

@@ -3,7 +3,7 @@ metaDescription: Vacatures op je eigen website via de gratis vacaturemodule van 
 metaKeywords: vacaturemodule, zoekformulier
 ---
 
-[Developer Hub](/) &raquo; De vacaturemodule
+[Developer Hub]({{ site.baseurl }}/) &raquo; De vacaturemodule
 
 # Vacatures gratis op je website
 
@@ -22,11 +22,11 @@ Hulp nodig? Bel 085-4019579, wij bieden **kosteloos een helpende hand** bij de i
 Benieuwd hoe de vacaturemodule eruit ziet? Bekijk het resultaat bij
 <a href="http://flexchauffeurs.nl/vrachtwagenchauffeurs-vacatures/" target="_blank">Flexchauffeurs</a>.
 
-[Maak nu je eigen vacaturemodule &raquo;](/vacaturemodule/vacaturemodule-stap-een.html)
+[Maak nu je eigen vacaturemodule &raquo;]({{ site.baseurl }}/vacaturemodule/vacaturemodule-stap-een.html)
 
 ## Zoekformulier voor vacaturemodule
 
 De vacaturemodule toegevoegd? Voeg dan ook **gratis** het **zoekformulier** toe aan je website.
 Zo kunnen werkzoekenden snel en gemakkelijk hun ideale baan vinden op jouw website.
 
-[Voeg nu een zoekformulier toe voor je vacaturemodule &raquo;](/vacaturemodule/zoekformulier.html)
+[Voeg nu een zoekformulier toe voor je vacaturemodule &raquo;]({{ site.baseurl }}/vacaturemodule/zoekformulier.html)

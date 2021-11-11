@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [API](/api) &raquo; Documentatie
+[Developer Hub]({{ '/' | relative_url }}) &raquo; [API]({{ '/api' | relative_url }}) &raquo; Documentatie
 
 # API-documentatie
 
@@ -21,6 +21,6 @@ De mee te sturen parameters dienen dus als POST-waarden meegestuurd te worden na
 [techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20Aanvraag%20authenticatiesleutel%20API), of te bellen naar 085-4019579.
 Bewaar de sleutel goed, en ga ermee om als een waardevol wachtwoord.
 
-2. De eerste stap bij het implementeren van de API is de authenticatie. Bekijk de [uitgebreide beschrijving](/api/auth.html).
+2. De eerste stap bij het implementeren van de API is de authenticatie. Bekijk de [uitgebreide beschrijving]({{ '/api/auth.html' | relative_url }}).
 
-3. Als de authenticatie is gelukt, kun je de gegevens ophalen via de API. Bekijk het overzicht met [alle requests](/api/requests).
+3. Als de authenticatie is gelukt, kun je de gegevens ophalen via de API. Bekijk het overzicht met [alle requests]({{ '/api/requests' | relative_url }}).

@@ -1,13 +1,13 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [Widgets](/widgets/) &raquo; De vacaturewidget
+[Developer Hub]({{ site.baseurl }}/) &raquo; [Widgets]({{ site.baseurl }}/widgets/) &raquo; De vacaturewidget
 
 # De vacaturewidget
 
 Met deze widget kun je gratis vacatures toevoegen aan je eigen website. Deze vacatures zijn altijd actueel, zonder dat jij hier iets voor hoeft te doen.
 
-Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacaturemodule](/vacaturemodule).
+Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacaturemodule]({{ site.baseurl }}/vacaturemodule).
 
 ## Stap 1. Welke vacatures wil je tonen?
 
@@ -57,7 +57,7 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
     <label for="rid" class="control-label col-sm-3">Uitzendbureau</label>
     <div class="col-sm-6">
       <p class="form-control-static" id="recruiter-list-loader">
-        <img src="/images/loading.gif" alt="Even geduld." class="loader--small" />
+        <img src="{{ site.baseurl }}/images/loading.gif" alt="Even geduld." class="loader--small" />
         Lijst van uitzendbureaus wordt geladen
       </p>
     </div>
@@ -115,12 +115,12 @@ Wil je kandidaten op je eigen website laten solliciteren? Gebruik dan [de vacatu
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/javascripts/layout/jquery-custom-select-box.js"></script>
-<script src="/javascripts/external/bootstrap/dropdown.min.js"></script>
-<script src="/javascripts/external/hex_sha1.js"></script>
-<script src="/javascripts/external/uri.js"></script>
-<script src="/javascripts/layout/output-buffer.js"></script>
-<script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
-<script src="/javascripts/widgets/recruiter.js"></script>
-<script src="/javascripts/widgets/job.js"></script>
-<script src="/javascripts/widgets/job-controller.js"></script>
+<script src="{{ site.baseurl }}/javascripts/layout/jquery-custom-select-box.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/bootstrap/dropdown.min.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/hex_sha1.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/uri.js"></script>
+<script src="{{ site.baseurl }}/javascripts/layout/output-buffer.js"></script>
+<script src="{{ site.baseurl }}/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
+<script src="{{ site.baseurl }}/javascripts/widgets/recruiter.js"></script>
+<script src="{{ site.baseurl }}/javascripts/widgets/job.js"></script>
+<script src="{{ site.baseurl }}/javascripts/widgets/job-controller.js"></script>

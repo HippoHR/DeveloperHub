@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; Integratiepartners
+[Developer Hub]({{ site.baseurl }}/) &raquo; [Vacatures plaatsen via XML]({{ site.baseurl }}/jobs-xml) &raquo; Integratiepartners
 
 # Integratiepartners
 
@@ -14,4 +14,4 @@ Als je al gebruik maakt van &eacute;&eacute;n of meer van de volgende softwaresy
 * YellowYard
 * UBPlus
 
-Gebruik je deze software niet? Dan kun je ook zelf een [koppeling (laten) maken](/jobs-xml).
+Gebruik je deze software niet? Dan kun je ook zelf een [koppeling (laten) maken]({{ site.baseurl }}/jobs-xml).

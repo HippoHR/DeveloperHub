@@ -1,14 +1,14 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo; /authentication/authenticate
+[Developer Hub]({{ '/' | relative_url }}) &raquo; [API]({{ '/api' | relative_url }}) &raquo; [Documentatie]({{ '/api/doc.html' | relative_url }}) &raquo; [Requests]({{ '/api/requests' | relative_url }}) &raquo; /authentication/authenticate
 
 # /authentication/authenticate
 
 Authenticeer jezelf, door het versturen van de gegenereerde response. Indien dit succesvol verloopt, kun je gedurende de lopende sessie de API-requests
 aanroepen waarvoor authenticatie is vereist.
 
-[Meer informatie over de authenticatieprocedure](/api/auth.html).
+[Meer informatie over de authenticatieprocedure]({{ site.baseurl }}/api/auth.html).
 
 ## Request
 
@@ -19,7 +19,7 @@ aanroepen waarvoor authenticatie is vereist.
 
 |**Parameter** |**Type** |**Optioneel** |**Beschrijving**
 |**sessionId** |String   |Nee           |De session identifier (hoofdlettergevoelig), die is verkregen bij het aanvragen van een challenge.
-|**response**  |String   |Nee           |De response, zoals deze is gegenereerd door de client. Een beschrijving hiervan vind je [hier](/api/auth.html).
+|**response**  |String   |Nee           |De response, zoals deze is gegenereerd door de client. Een beschrijving hiervan vind je [hier]({{ site.baseurl }}/api/auth.html).
 
 ## Response
 

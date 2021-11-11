@@ -37,7 +37,7 @@ module.exports = function(config) {
         ],
 
         // test results reporter to use
-        reporters: ['progress', 'coverage', 'sonarqubeUnit'],
+        reporters: ['progress', 'coverage', 'sonarqubeUnit', 'junit'],
 
         // coverage
         preprocessors: {
@@ -52,6 +52,12 @@ module.exports = function(config) {
             // lcov and html
             type: 'lcov',
             dir: 'test/coverage/'
+        },
+
+        junitReporter: {
+          outputDir: '',
+          outputFile: 'junit.xml',
+          useBrowserName: false
         },
 
         sonarQubeUnitReporter: {

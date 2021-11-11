@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [De vacaturemodule](/vacaturemodule/) &raquo; De vacaturemodule toevoegen stap 1
+[Developer Hub]({{ site.baseurl }}/) &raquo; [De vacaturemodule]({{ site.baseurl }}/vacaturemodule/) &raquo; De vacaturemodule toevoegen stap 1
 
 # De vacaturemodule
 
@@ -24,7 +24,7 @@ website. Je webbouwer kan je hiermee helpen, of bel ons op 085-4019579 voor **gr
   <div class="form-group">
     <div class="col-sm-6">
       <p class="form-control-static" id="recruiter-list-loader">
-        <img src="/images/loading.gif" alt="Even geduld." class="loader--small" />
+        <img src="{{ site.baseurl }}/images/loading.gif" alt="Even geduld." class="loader--small" />
         Lijst van uitzendbureaus wordt geladen
       </p>
     </div>
@@ -39,9 +39,9 @@ website. Je webbouwer kan je hiermee helpen, of bel ons op 085-4019579 voor **gr
 
 </form>
 
-<script src="/javascripts/external/uri.js"></script>
-<script src="/javascripts/external/hex_sha1.js"></script>
-<script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
-<script src="/javascripts/widgets/recruiter.js"></script>
-<script src="/javascripts/job-module/job-module.js"></script>
-<script src="/javascripts/job-module/job-module-controller.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/uri.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/hex_sha1.js"></script>
+<script src="{{ site.baseurl }}/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
+<script src="{{ site.baseurl }}/javascripts/widgets/recruiter.js"></script>
+<script src="{{ site.baseurl }}/javascripts/job-module/job-module.js"></script>
+<script src="{{ site.baseurl }}/javascripts/job-module/job-module-controller.js"></script>
