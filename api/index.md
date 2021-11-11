@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; API
+[Developer Hub]({{ '/' | relative_url }}) &raquo; API
 
 # API
 
@@ -15,4 +15,4 @@ Indien jouw uitzendbureau gebruik wil maken van de API, neem dan contact op met 
 [techniek@uitzendbureau.nl](mailto:techniek@uitzendbureau.nl?subject=DeveloperHub%3A%20Aanvraag%20authenticatiesleutel%20API). Je ontvangt dan een
 authenticatiesleutel van ons, waarmee je gebruik kunt maken van de API.
 
-[Aan de slag!](/api/doc.html)
+[Aan de slag!]({{ '/api/doc.html' | relative_url }})

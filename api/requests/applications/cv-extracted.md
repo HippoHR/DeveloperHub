@@ -1,14 +1,14 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo; /applications/cv/extracted
+[Developer Hub]({{ '/' | relative_url }}) &raquo; [API]({{ '/api' | relative_url }}) &raquo; [Documentatie]({{ '/api/doc.html' | relative_url }}) &raquo; [Requests]({{ '/api/requests' | relative_url }}) &raquo; /applications/cv/extracted
 
 # /application/cv/extracted
 
 Vraag de inhoud van een cv-bestand op. De inhoud wordt zo goed mogelijk uit het cv-document gehaald en gemapt naar de beschikbare velden.
 
 _Let op:_ wij kunnen niet garanderen dat bepaalde velden onder `cv` altijd zijn ingevuld. Sommige velden kunnen verkeerd gemapt zijn, of afwijken van de
-gegevens die opgevraagd worden bij [/applications](/api/requests/applications). Daarnaast kunnen de gegevens in een vreemde taal, incorrect of vreemd worden
+gegevens die opgevraagd worden bij [/applications]({{ site.baseurl }}/api/requests/applications). Daarnaast kunnen de gegevens in een vreemde taal, incorrect of vreemd worden
 getoond. Dit is afhankelijk van de kwaliteit van het cv-bestand en de technologie die de gegevens uit dit bestand verwerkt. Uitzendbureau.nl heeft zelf geen
 directe invloed op deze technologie.
 
@@ -28,8 +28,8 @@ cv&#39;s die voor 25 mei 2012 bij een profiel van werkzoekenden zijn gezet, en l
 
 |**Parameter**     |**Type** |**Optioneel** |**Beschrijving**
 |**sessionId**     |String   |Nee           |De session identifier (hoofdlettergevoelig), die is verkregen tijdens de authenticatie.
-|**cvHash**        |String   |Nee           |De unieke hash van de cv, zoals verkregen bij het [opvragen van de sollicitaties](/api/requests/applications).
-|**applicationId** |Int      |Nee           |Het unieke id van de sollicitatie, waarbij de betreffende cv is meegestuurd. Het id kan verstuurd worden zoals deze is verkregen bij het [opvragen van de sollicitaties](/api/requests/applications).
+|**cvHash**        |String   |Nee           |De unieke hash van de cv, zoals verkregen bij het [opvragen van de sollicitaties]({{ site.baseurl }}/api/requests/applications).
+|**applicationId** |Int      |Nee           |Het unieke id van de sollicitatie, waarbij de betreffende cv is meegestuurd. Het id kan verstuurd worden zoals deze is verkregen bij het [opvragen van de sollicitaties]({{ site.baseurl }}/api/requests/applications).
 
 ## Response
 

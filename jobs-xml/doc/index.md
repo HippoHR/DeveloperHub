@@ -1,12 +1,12 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; Documentatie
+[Developer Hub]({{ site.baseurl }}/) &raquo; [Vacatures plaatsen via XML]({{ site.baseurl }}/jobs-xml) &raquo; Documentatie
 
 Stap 1: Algemene informatie &middot;
-[Stap 2: Uitleg XML-schema](/jobs-xml/doc/xml-schema.html) &middot;
-[Stap 3: Validatie](/jobs-xml/doc/validation.html) &middot;
-[Stap 4: Aanmelden](/jobs-xml/doc/sign-up.html)
+[Stap 2: Uitleg XML-schema]({{ site.baseurl }}/jobs-xml/doc/xml-schema.html) &middot;
+[Stap 3: Validatie]({{ site.baseurl }}/jobs-xml/doc/validation.html) &middot;
+[Stap 4: Aanmelden]({{ site.baseurl }}/jobs-xml/doc/sign-up.html)
 
 # Algemene informatie
 
@@ -16,11 +16,11 @@ De XML-feed dient door het uitzendbureau gehost te worden. Doorgaans gebeurt dit
 bestand dan benaderen via een HTTP-request.
 
 Uitzendbureau.nl gebruikt flexibele ip-adressen. Het bestand dient dus toegankelijk zijn voor ieder ip-adres. Wil je liever niet dat dit bestand publiekelijk
-benaderbaar is, dan kun je [deze authorisatie](/jobs-xml/doc/auth.html) implementeren.
+benaderbaar is, dan kun je [deze authorisatie]({{ site.baseurl }}/jobs-xml/doc/auth.html) implementeren.
 
 ## Toegestane (X)HTML-tags
 
-Bij sommige XML-elementen is het toegestaan om (X)HTML-tags te gebruiken. Bij de [betreffende elementen](/jobs-xml/doc/xml-schema.html) wordt dit aangegeven.
+Bij sommige XML-elementen is het toegestaan om (X)HTML-tags te gebruiken. Bij de [betreffende elementen]({{ site.baseurl }}/jobs-xml/doc/xml-schema.html) wordt dit aangegeven.
 
 Niet alle tags zijn toegestaan. Niet toegestane tags worden verwijderd. Daarnaast worden ook alle attributen verwijderd. De volgende tags zijn w&eacute;l
 toegestaan:
@@ -65,4 +65,4 @@ Als je bestand bijvoorbeeld ingedeeld is als `UTF-8`, dan gebruik je als XML-hea
 
 ## Duidelijk! En nu?
 
-Bekijk de [uitleg van het XML-schema](/jobs-xml/doc/xml-schema.html).
+Bekijk de [uitleg van het XML-schema]({{ site.baseurl }}/jobs-xml/doc/xml-schema.html).

@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo; /applications/cv
+[Developer Hub]({{ '/' | relative_url }}) &raquo; [API]({{ '/api' | relative_url }}) &raquo; [Documentatie]({{ '/api/doc.html' | relative_url }}) &raquo; [Requests]({{ '/api/requests' | relative_url }}) &raquo; /applications/cv
 
 # /application/cv
 
@@ -16,8 +16,8 @@ Download een cv, dat is meegestuurd bij een sollicitatie.
 
 |**Parameter**     |**Type** |**Optioneel** |**Beschrijving**
 |**sessionId**     |String   |Nee           |De session identifier (hoofdlettergevoelig), die is verkregen tijdens de authenticatie.
-|**cvHash**        |String   |Nee           |De unieke hash van de cv, zoals verkregen bij het [opvragen van de sollicitaties](/api/requests/applications).
-|**applicationId** |Integer  |Nee           |Het unieke id van de sollicitatie, waarbij de betreffende cv is meegestuurd. Het id kan verstuurd worden zoals deze is verkregen bij het [opvragen van de sollicitaties](/api/requests/applications).
+|**cvHash**        |String   |Nee           |De unieke hash van de cv, zoals verkregen bij het [opvragen van de sollicitaties]({{ site.baseurl }}/api/requests/applications).
+|**applicationId** |Integer  |Nee           |Het unieke id van de sollicitatie, waarbij de betreffende cv is meegestuurd. Het id kan verstuurd worden zoals deze is verkregen bij het [opvragen van de sollicitaties]({{ site.baseurl }}/api/requests/applications).
 
 ## Response
 
@@ -59,7 +59,7 @@ Eventuele fouten worden aangegeven in de vorm van HTTP status codes. Bij deze re
                 <strong>401</strong>
             </td>
             <td>
-                Je bent niet geauthenticeerd. Mogelijk is de sessie verlopen. Volg <a href="/api/auth.html">deze stappen</a> opnieuw, om jezelf in te loggen.
+                Je bent niet geauthenticeerd. Mogelijk is de sessie verlopen. Volg <a href="{{ site.baseurl }}/api/auth.html">deze stappen</a> opnieuw, om jezelf in te loggen.
             </td>
         </tr>
         <tr>

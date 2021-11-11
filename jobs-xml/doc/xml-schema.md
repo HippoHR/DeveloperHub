@@ -1,12 +1,12 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; [Documentatie](/jobs-xml/doc) &raquo; Uitleg XML-schema
+[Developer Hub]({{ site.baseurl }}/) &raquo; [Vacatures plaatsen via XML]({{ site.baseurl }}/jobs-xml) &raquo; [Documentatie]({{ site.baseurl }}/jobs-xml/doc) &raquo; Uitleg XML-schema
 
-[Stap 1: Algemene informatie](/jobs-xml/doc) &middot;
+[Stap 1: Algemene informatie]({{ site.baseurl }}/jobs-xml/doc) &middot;
 Stap 2: Uitleg XML-schema &middot;
-[Stap 3: Validatie](/jobs-xml/doc/validation.html) &middot;
-[Stap 4: Aanmelden](/jobs-xml/doc/sign-up.html)
+[Stap 3: Validatie]({{ site.baseurl }}/jobs-xml/doc/validation.html) &middot;
+[Stap 4: Aanmelden]({{ site.baseurl }}/jobs-xml/doc/sign-up.html)
 
 # Uitleg XML-schema
 
@@ -15,7 +15,7 @@ gegevens moet invullen. Toch gaan we uitgebreid elk element bespreken en uitlegg
 [XML-schema (XSD)](https://www.uitzendbureau.nl/xml/job-1.0.xsd) downloaden.
 
 Met PHP, Java of een andere programmeertaal is het mogelijk om een XML-document te genereren. Bekijk eens het
-[PHP-voorbeeld](/jobs-xml/doc/examples.html).
+[PHP-voorbeeld]({{ site.baseurl }}/jobs-xml/doc/examples.html).
 
 ## Verplichte velden
 
@@ -23,7 +23,7 @@ Slechts enkele elementen zijn verplicht in te vullen. Als een element verplicht 
 
 ## Alle velden uitgelegd
 
-Ieder XML-bestand begint als volgt. Zorg ervoor dat je de [juiste encoding](/jobs-xml/doc#bestandsformaten) invult.
+Ieder XML-bestand begint als volgt. Zorg ervoor dat je de [juiste encoding]({{ site.baseurl }}/jobs-xml/doc#bestandsformaten) invult.
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -113,7 +113,7 @@ De titel van de vacature.
 </jobTitle>
 {% endhighlight %}
 
-### jobDescription <span class="label label-warning">verplicht</span> <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+### jobDescription <span class="label label-warning">verplicht</span> <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Een algemene beschrijving van de vacature. Informatie over bijv. de ervaring of het salaris kan bij andere velden worden ondergebracht.
 
@@ -280,7 +280,7 @@ Hieronder een voorbeeld van hoe het totaalplaatje eruit kan zien.
 </jobOffer>
 {% endhighlight %}
 
-#### offerDescription <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+#### offerDescription <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Algemene informatie over wat de werkgever heeft te bieden.
 
@@ -338,11 +338,11 @@ Maximaal aantal uren per week.
 
 Als het niet mogelijk is om het aantal uren onder te brengen bij `hoursMin` en `hoursMax`, vul dan hier een algemene beschrijving in.
 
-#### contractSalaryDescription <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+#### contractSalaryDescription <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Omschrijving van het salarisaanbod.
 
-#### contractDescription <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+#### contractDescription <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Algemene omschrijving van het contract.
 
@@ -373,19 +373,19 @@ Specifiekere informatie over de vereisten.
 </jobRequirements>
 {% endhighlight %}
 
-#### requirementsDescription <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+#### requirementsDescription <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Algemene omschrijving van de vereisten.
 
-#### requirementsExperience <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+#### requirementsExperience <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Omschrijving van de ervaringen die gewenst zijn.
 
-#### requirementsCourses <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+#### requirementsCourses <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Omschrijving van de opleidingen/cursussen die gewenst zijn.
 
-### jobEmployerInfo <a href="/jobs-xml/doc/" class="label label-info">xhtml</a>
+### jobEmployerInfo <a href="{{ site.baseurl }}/jobs-xml/doc/" class="label label-info">xhtml</a>
 
 Algemene informatie over de werkgever.
 
@@ -520,4 +520,4 @@ halen. `https://www.youtube.com/watch?v=9bZkp7q19f0` heeft bijvoorbeeld id `9bZk
 
 ## Heb je de XML-feed af?
 
-[Controleer hem dan op fouten](/jobs-xml/doc/validation.html).
+[Controleer hem dan op fouten]({{ site.baseurl }}/jobs-xml/doc/validation.html).

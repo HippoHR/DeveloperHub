@@ -1,20 +1,20 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; [Documentatie](/jobs-xml/doc) &raquo; Aanmelden
+[Developer Hub]({{ site.baseurl }}/) &raquo; [Vacatures plaatsen via XML]({{ site.baseurl }}/jobs-xml) &raquo; [Documentatie]({{ site.baseurl }}/jobs-xml/doc) &raquo; Aanmelden
 
-[Stap 1: Algemene informatie](/jobs-xml/doc) &middot;
-[Stap 2: Uitleg XML-schema](/jobs-xml/doc/xml-schema.html) &middot;
-[Stap 3: Validatie](/jobs-xml/doc/validation.html) &middot;
+[Stap 1: Algemene informatie]({{ site.baseurl }}/jobs-xml/doc) &middot;
+[Stap 2: Uitleg XML-schema]({{ site.baseurl }}/jobs-xml/doc/xml-schema.html) &middot;
+[Stap 3: Validatie]({{ site.baseurl }}/jobs-xml/doc/validation.html) &middot;
 Stap 4: Aanmelden
 
 # Aanmelden XML-feed
 
 Hier kun je de nieuwe XML-feed bij ons aanmelden. De XML dient op een publieke URL beschikbaar te zijn. Zorg ervoor dat de feed is
-[gevalideerd](/jobs-xml/doc/validation.html).
+[gevalideerd]({{ site.baseurl }}/jobs-xml/doc/validation.html).
 
-Indien er [authorisatie](/jobs-xml/doc/auth.html) nodig is, dan kun je de **volledige waarde van de authorisatieheader** invullen bij `authorisatie`, zoals
-[hier](/jobs-xml/doc/auth.html) is beschreven.
+Indien er [authorisatie]({{ site.baseurl }}/jobs-xml/doc/auth.html) nodig is, dan kun je de **volledige waarde van de authorisatieheader** invullen bij `authorisatie`, zoals
+[hier]({{ site.baseurl }}/jobs-xml/doc/auth.html) is beschreven.
 
 <div id="sign-up-error" class="hidden">
     <div class="alert alert-danger">
@@ -96,7 +96,7 @@ Indien er [authorisatie](/jobs-xml/doc/auth.html) nodig is, dan kun je de **voll
     </p>
 </div>
 
-<script src="/javascripts/external/uri.js"></script>
-<script src="/javascripts/external/hex_sha1.js"></script>
-<script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
-<script src="/javascripts/jobs-xml/sign-up.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/uri.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/hex_sha1.js"></script>
+<script src="{{ site.baseurl }}/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
+<script src="{{ site.baseurl }}/javascripts/jobs-xml/sign-up.js"></script>

@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [De vacaturemodule](/vacaturemodule/) &raquo; De vacaturemodule toevoegen stap 2
+[Developer Hub]({{ site.baseurl }}/) &raquo; [De vacaturemodule]({{ site.baseurl }}/vacaturemodule/) &raquo; De vacaturemodule toevoegen stap 2
 
 # De vacaturemodule
 
@@ -292,11 +292,11 @@ Hieronder kun je aangeven welke onderdelen van de module je wil tonen op je webs
   <div id="example-body"></div>
 </div>
 
-<script src="/javascripts/external/uri.js"></script>
-<script src="/javascripts/external/hex_sha1.js"></script>
-<script src="/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
-<script src="/javascripts/widgets/recruiter.js"></script>
-<script src="/javascripts/widgets/branch.js"></script>
-<script src="/javascripts/job-module/job-module.js"></script>
-<script src="/javascripts/external/jscolor/jscolor.js"></script>
-<script src="/javascripts/job-module/job-module-controller.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/uri.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/hex_sha1.js"></script>
+<script src="{{ site.baseurl }}/javascripts/api-clients/uitzendbureau-nl-api.js"></script>
+<script src="{{ site.baseurl }}/javascripts/widgets/recruiter.js"></script>
+<script src="{{ site.baseurl }}/javascripts/widgets/branch.js"></script>
+<script src="{{ site.baseurl }}/javascripts/job-module/job-module.js"></script>
+<script src="{{ site.baseurl }}/javascripts/external/jscolor/jscolor.js"></script>
+<script src="{{ site.baseurl }}/javascripts/job-module/job-module-controller.js"></script>

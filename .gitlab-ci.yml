@@ -1,0 +1,69 @@
+variables:
+  APPLICATION: developer-hub
+
+image: jekyll/jekyll
+
+stages:
+  - install
+  - test
+  - lint
+  - coverage
+
+install:
+  stage: install
+  script:
+    - npm install
+    - jekyll build -b /developer-hub
+  artifacts:
+    paths:
+      - _site/
+
+test:
+  stage: test
+  needs:
+    - install
+  script:
+    - npm install -g grunt
+    - npm install
+    - npm test
+  artifacts:
+    reports:
+      junit:
+       - junit.xml
+    when: always
+    untracked: true
+    expire_in: 1 hour
+
+lint:arcanist:
+  image: node:14
+  stage: lint
+  allow_failure: true
+  script:
+    - apt-get update && apt-get install -y git php php-cli php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+    - npm install -g jshint jscs
+    - wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && mv jq-linux64 /etc/jq && chmod +x /etc/jq
+    - git clone https://github.com/phacility/arcanist.git /etc/arcanist && chmod +x /etc/arcanist/bin/arc
+    - git fetch origin ${CI_DEFAULT_BRANCH}:${CI_DEFAULT_BRANCH}
+    - EXIT_CODE=0
+    - LINT_ISSUES=$(/etc/arcanist/bin/arc lint --never-apply-patches --output json --rev ${CI_DEFAULT_BRANCH}) || EXIT_CODE=1
+    - >
+      echo $LINT_ISSUES |
+        /etc/jq --argjson severities '{"disabled":"info","advise":"minor","warning":"major","error":"critical"}' \
+        'keys as $parent | .[] | map(.severity |= $severities[.]) | .[] | {"description": (.name + ": " + .description), "severity": .severity, "location": {"path": $parent, "lines": {"begin": .line}}}' |\
+        /etc/jq '[inputs]' \
+        >> arcanist.json
+    - exit "$EXIT_CODE"
+  artifacts:
+    reports:
+      codequality: arcanist.json
+
+pages:
+  stage: coverage
+  needs:
+    - install
+  script:
+    - mv _site public
+  artifacts:
+    paths:
+      - public
+    expire_in: 10 days

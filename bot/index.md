@@ -2,7 +2,7 @@
 metaDescription: Uitleg over de Uitzendbureau.nl bot.
 ---
 
-[Developer Hub](/) &raquo; Uitzendbureau.nl bot
+[Developer Hub]({{ site.baseurl }}/) &raquo; Uitzendbureau.nl bot
 
 Ben jij een webmaster en vraag jij jezelf af waarom 'uitzendbureaunlBot' jouw webpagina bezoekt? Hier vind je het antwoord!
 

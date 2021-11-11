@@ -7,11 +7,11 @@
     <title>{{ page.title }}</title>
     <meta name="keywords" content="{{ page.metaKeywords }}" />
     <meta name="description" content="{{ page.metaDescription }}" />
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="/stylesheets/sumoselect.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/sumoselect.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="/javascripts/external/jquery/jquery.sumoselect.js"></script>
+    <script src="{{ site.baseurl }}/javascripts/external/jquery/jquery.sumoselect.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>
@@ -22,8 +22,8 @@
     <div class="wrapper">
       <header>
         <div class="logo">
-          <a href="/">
-            <img src="/images/logo.svg" alt="DeveloperHub van Uitzendbureau.nl"/>
+          <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/images/logo.svg" alt="DeveloperHub van Uitzendbureau.nl"/>
             <h3>DeveloperHub van Uitzendbureau.nl</h3>
           </a>
         </div>
@@ -38,7 +38,7 @@
       </section>
     </div>
 
-    <script src="/javascripts/external/scale-fix.js"></script>
+    <script src="{{ site.baseurl }}/javascripts/external/scale-fix.js"></script>
     <!-- Google Analytics tracking code -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

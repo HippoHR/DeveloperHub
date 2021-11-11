@@ -1,7 +1,7 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [Vacatures plaatsen via XML](/jobs-xml) &raquo; [Documentatie](/jobs-xml/doc) &raquo; Authorisatie
+[Developer Hub]({{ site.baseurl }}/) &raquo; [Vacatures plaatsen via XML]({{ site.baseurl }}/jobs-xml) &raquo; [Documentatie]({{ site.baseurl }}/jobs-xml/doc) &raquo; Authorisatie
 
 # Authorisatie
 

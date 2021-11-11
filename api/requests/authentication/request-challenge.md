@@ -1,14 +1,14 @@
 ---
 ---
 
-[Developer Hub](/) &raquo; [API](/api) &raquo; [Documentatie](/api/doc.html) &raquo; [Requests](/api/requests) &raquo;
+[Developer Hub]({{ '/' | relative_url }}) &raquo; [API]({{ '/api' | relative_url }}) &raquo; [Documentatie]({{ '/api/doc.html' | relative_url }}) &raquo; [Requests]({{ '/api/requests' | relative_url }}) &raquo;
 /authentication/request-challenge
 
 # /authentication/request-challenge
 
 Vraag een challenge aan, waarmee een response gegenereerd kan worden. Dit wordt gebruikt bij de authenticatie.
 
-[Meer informatie over de authenticatieprocedure](/api/auth.html).
+[Meer informatie over de authenticatieprocedure]({{ site.baseurl }}/api/auth.html).
 
 ## Request
 
@@ -27,7 +27,7 @@ De response wordt aangeboden in JSON-formaat.
 
 |**Veld**      |**Type**    |**Optioneel** |**Beschrijving**
 |**sessionId** |String      |Nee           |De session identifier, uniek voor de huidige sessie. Deze waarde dient bij ieder volgend request te worden meegestuurd.
-|**challenge** |String      |Nee           |De challenge, welke gebruikt wordt voor het maken van een response. Meer informatie hierover vind je [hier](/api/auth.html).
+|**challenge** |String      |Nee           |De challenge, welke gebruikt wordt voor het maken van een response. Meer informatie hierover vind je [hier]({{ site.baseurl }}/api/auth.html).
 
 ## Foutcodes
 
