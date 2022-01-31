@@ -12,3 +12,4 @@ nbproject/
 /test/ut_report.xml
 /test/coverage
 /test/all-lcov.info
+junit.xml
