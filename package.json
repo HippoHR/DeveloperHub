@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "grunt": "1.4.1",
+    "grunt": "1.5.2",
     "grunt-karma": "4.0.2",
     "grunt-lcov-merge": "1.2.3",
     "jasmine-core": "3.10.1",
