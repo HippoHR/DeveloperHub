@@ -518,6 +518,28 @@ nog andere locaties toegevoegd.
 Je video moet al zijn toegevoegd aan YouTube, om deze toe te voegen aan de XML-feed. Vul het id in van de YouTube-video. Het id kun je uit de url van de video
 halen. `https://www.youtube.com/watch?v=9bZkp7q19f0` heeft bijvoorbeeld id `9bZkp7q19f0`.
 
+### applicationMethods
+Momenteel is alleen WhatsApp beschikbaar. Andere formaten kunnen later worden toegevoegd. Let op: dit werkt als een extra
+sollicitatiemethode - de onsite en offsite sollicitatiemethodes blijven aanwezig, ongeacht mobiele sollicitaties.
+{% highlight xml %}
+<applicationMethods>
+  <whatsapp>
+    <phone>
+      <![CDATA[
+        +31613223245
+      ]]>
+    </phone>
+  </whatsapp>
+</applicationMethods>
+{% endhighlight %}
+
+#### whatsapp
+Hier kunt u informatie verstrekken voor whatsapply.
+
+##### number
+Whatsapp-contactnummer. Het telefoonnummer mag alleen in internationaal formaat worden opgegeven (wat betekent dat u ook de landcode `+31` moet opgeven). 
+We accepteren alleen waarden in dit patroon `\s*\+[0-9\-()\s]+`.
+
 ## Heb je de XML-feed af?
 
 [Controleer hem dan op fouten]({{ site.baseurl }}/jobs-xml/doc/validation.html).
