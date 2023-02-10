@@ -3,7 +3,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "1.5.3",
+    "grunt": "1.6.1",
     "grunt-karma": "4.0.2",
     "grunt-lcov-merge": "1.2.3",
     "jasmine-core": "4.4.0",
