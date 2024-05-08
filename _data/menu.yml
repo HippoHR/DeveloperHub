@@ -51,6 +51,8 @@
           subitems:
             - text: /applications
               url: /api/requests/applications/
+            - text: /applications/tracking-data
+              url: /api/requests/applications/external-application-data.html
             - text: /application/cv
               url: /api/requests/applications/cv.html
             - text: /application/cv/extracted
