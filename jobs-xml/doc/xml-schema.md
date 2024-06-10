@@ -533,6 +533,18 @@ sollicitatiemethode - de onsite en offsite sollicitatiemethodes blijven aanwezig
 </applicationMethods>
 {% endhighlight %}
 
+### logo
+
+Door de logolink te verstrekken, wordt dit logo ingesteld voor de recruiter. Als er meer dan één logo in vacatures wordt verstrekt, wordt alleen het eerste logo ingesteld voor de recruiter.
+
+{% highlight xml %}
+<logo>
+  <![CDATA[
+    https://symfony.com/logos/symfony_black_02.png
+  ]]>
+</logo>
+{% endhighlight %}
+
 #### whatsapp
 Hier kunt u informatie verstrekken voor whatsapply.
 
