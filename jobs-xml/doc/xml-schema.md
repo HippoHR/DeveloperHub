@@ -552,6 +552,30 @@ Hier kunt u informatie verstrekken voor whatsapply.
 Whatsapp-contactnummer. Het telefoonnummer mag alleen in internationaal formaat worden opgegeven (wat betekent dat u ook de landcode `+31` moet opgeven). 
 We accepteren alleen waarden in dit patroon `\s*\+[0-9\-()\s]+`.
 
+### trackingDataKey
+If you want to use [Data tracking api]({{ site.baseurl }}/api/requests/applications/external-application-data.html), you'll need to provide your generated key
+(same key for all of your jobs). The key is something you can generate yourself. Just make sure it's a bit lengthy and hard to guess. In addition to this, you 
+also need to provide cpc tag if you want cpc to be present in tracking data.
+
+{% highlight xml %}
+<trackingDataKey>
+  <![CDATA[
+  66773934444496256022244206744121
+  ]]>
+</trackingDataKey>
+{% endhighlight %}
+
+### cpc
+CPC price in cents
+
+{% highlight xml %}
+<cpc>
+  <![CDATA[
+  2300
+  ]]>
+</cpc>
+{% endhighlight %}
+
 ## Heb je de XML-feed af?
 
 [Controleer hem dan op fouten]({{ site.baseurl }}/jobs-xml/doc/validation.html).
