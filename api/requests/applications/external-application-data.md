@@ -37,7 +37,6 @@ The response is in JSON format, containing an array of object.
 
 ## Error Codes
 Possible errors are indicated in the form of HTTP status codes. The following error codes may occurs during this request:
-
 <table>
     <tbody>
         <tr>
@@ -53,7 +52,7 @@ Possible errors are indicated in the form of HTTP status codes. The following er
                 <strong>401</strong>
             </td>
             <td>
-                You are not authenticated. Maybe the session has expired, follow <a href="{your-link-to-authentication-steps}">these steps</a> to login again.
+                You are not authenticated. Maybe the session has expired, follow <a href="/api/auth.html">these steps</a> to login again.
             </td>
         </tr>
         <tr>
