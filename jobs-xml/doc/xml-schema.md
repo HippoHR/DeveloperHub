@@ -576,6 +576,17 @@ CPC price in cents
 </cpc>
 {% endhighlight %}
 
+### campaignId
+Campaign Id; please insert the campaign ID provided by us in this field (only if you work campaign based)
+
+{% highlight xml %}
+<campaignId>
+  <![CDATA[
+  4238742737427838499
+  ]]>
+</campaignId>
+{% endhighlight %}
+
 ## Heb je de XML-feed af?
 
 [Controleer hem dan op fouten]({{ site.baseurl }}/jobs-xml/doc/validation.html).
