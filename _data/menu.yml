@@ -1,12 +1,5 @@
 - text: Home
   url: /
-- text: De vacaturemodule
-  url: /vacaturemodule/
-  subitems:
-    - text: De vacaturemodule toevoegen
-      url: /vacaturemodule/vacaturemodule-stap-een.html
-    - text: Het zoekformulier toevoegen
-      url: /vacaturemodule/zoekformulier.html
 - text: Vacatures plaatsen via XML
   url: /jobs-xml/
   subitems:
@@ -57,12 +50,5 @@
               url: /api/requests/applications/cv.html
             - text: /application/cv/extracted
               url: /api/requests/applications/cv-extracted.html
-- text: Widgets
-  url: /widgets/
-  subitems:
-    - text: De vacaturewidget
-      url: /widgets/vacaturewidget.html
-    - text: De zoekwidget
-      url: /widgets/zoekwidget.html
 - text: Bot
   url: /bot/

@@ -17,12 +17,6 @@ module.exports = function(config) {
             'javascripts/external/**/*.js',
             'javascripts/api-clients/*.js',
             'javascripts/layout/*.js',
-            // The controllers depend on these files, so we need to include them first before including the controllers
-            'javascripts/job-module/job-module.js',
-            // Recruiter is required by the jobwidget form
-            'javascripts/widgets/recruiter.js',
-            'javascripts/widgets/job.js',
-            'javascripts/widgets/search.js',
             // Include all other javascripts, that are no dependencies
             'javascripts/**/*.js',
             // Include the tests
