@@ -587,6 +587,19 @@ Campaign Id; please insert the campaign ID provided by us in this field (only if
 </campaignId>
 {% endhighlight %}
 
+### marketingBoost
+Marketing Boost is applied per job and has the highest priority. If no value is specified, the value from the campaign or recruiter is used. If all these are undefined, the default value of 1 is applied.
+
+Marketing Boost is a numeric value. Numbers greater than 1 enhance job visibility.
+
+{% highlight xml %}
+<marketingBoost>
+  <![CDATA[
+  1.7
+  ]]>
+</marketingBoost>
+{% endhighlight %}
+
 ## Heb je de XML-feed af?
 
 [Controleer hem dan op fouten]({{ site.baseurl }}/jobs-xml/doc/validation.html).
