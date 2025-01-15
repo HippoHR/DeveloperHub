@@ -179,6 +179,22 @@ De postcode van de vacature.
 </jobLocation>
 {% endhighlight %}
 
+#### locationAddress
+
+**(Optioneel, maar zeer aanbevolen)**
+
+Het adres van de vacature.
+
+{% highlight xml %}
+<jobLocation>
+  <locationAddress>
+    <![CDATA[
+      Museumstraat 1
+    ]]>
+  </locationAddress>
+</jobLocation>
+{% endhighlight %}
+
 ### jobCategory
 
 De categorie waaronder deze vacature valt. Er kunnen meerdere categori&euml;n worden ingevuld (gescheiden door willekeurige word boundaries), maar de vacature
