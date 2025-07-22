@@ -13,5 +13,7 @@ Als je al gebruik maakt van &eacute;&eacute;n of meer van de volgende softwaresy
 * BroadBean
 * YellowYard
 * UBPlus
+* Mimir
+* Nubos
 
 Gebruik je deze software niet? Dan kun je ook zelf een [koppeling (laten) maken]({{ site.baseurl }}/jobs-xml).
