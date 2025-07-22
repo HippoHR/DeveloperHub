@@ -76,6 +76,23 @@ Soms zijn er voor een vacature meerdere id&#39;s (meestal voor verschillende sys
 </alternativeJobId>
 {% endhighlight %}
 
+### atsMetadata
+This element is intended for existing integrations with an ATS system. The value must be a valid JSON object containing data relevant to your specific ATS integration.
+
+The JSON object must contain a `jobId` key. Its value should be the unique identifier for the job within your ATS.
+Additional key-value pairs may be included. The structure and keys for this custom data must be agreed upon with our integration team beforehand.
+
+{% highlight xml %}
+<atsMetadata>
+  <![CDATA[
+    {
+        "jobId": "1234567",
+        "ownerId": "DO87S"
+    }
+  ]]>
+</atsMetadata>
+{% endhighlight %}
+
 ### jobAddedDate <span class="label label-warning">verplicht</span>
 
 De datum waarop de vacature is toegevoegd in jullie systeem. Gebruik het formaat `YYYY-MM-DD`.
