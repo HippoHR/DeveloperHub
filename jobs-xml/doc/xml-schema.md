@@ -492,8 +492,8 @@ Contactgegevens betreffende de vacature.
 </jobContact>
 {% endhighlight %}
 
-De velden `applicationUrl` en `applicationUrlHotJob` worden alleen gebruikt bij overeenstemming met de accountmanager van Uitzendbureau.nl. Standaard worden
-sollicitaties verzonden naar het e-mailadres in `contactEmail`. `applicationUrlHotJob` (indien beschikbaar) wordt alleen gebruikt bij sollicitaties op
+De velden `applicationUrl` en `applicationUrlHotJob` worden alleen gebruikt bij overeenstemming met de accountmanager van Uitzendbureau.nl.
+Sollicitaties verzonden naar het e-mailadres in `contactEmail` indien `applicationEmails` leeg is. `applicationUrlHotJob` (indien beschikbaar) wordt alleen gebruikt bij sollicitaties op
 topvacatures.
 
 Het veld `mandatoryMotivation` geeft aan of gebruikers verplicht een motivatietekst moeten invullen bij een sollicitatie.
@@ -631,6 +631,17 @@ Marketing Boost is a numeric value. Numbers greater than 1 enhance job visibilit
   1.7
   ]]>
 </marketingBoost>
+{% endhighlight %}
+
+### applicationEmail
+ApplicationEmail zijn de emailadressen waar de sollicitaties naar toe worden verzonden.
+Als `applicationEmail` leeg is wordt `contactEmail` gebruikt.
+
+{% highlight xml %}
+<applicationEmail>
+  <email><![CDATA[jan.janssen@arnhemmail.nl]]></email>
+  <email><![CDATA[ats@arnhemmail.nl]]></email>
+</applicationEmail>
 {% endhighlight %}
 
 ## Heb je de XML-feed af?
