@@ -6,7 +6,7 @@
     "grunt": "1.5.3",
     "grunt-karma": "4.0.2",
     "grunt-lcov-merge": "1.2.3",
-    "jasmine-core": "4.4.0",
+    "jasmine-core": "4.6.0",
     "karma": "6.4.1",
     "karma-coverage": "2.2.0",
     "karma-jasmine": "4.0.2",
